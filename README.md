@@ -24,7 +24,6 @@
 ## Papers
 - Environmental Sound Classification A Descriptive review of the literature - proposto da Anna; letto da:  
 
-
 ## Branches
 
 
