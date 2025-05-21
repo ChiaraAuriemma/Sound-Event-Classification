@@ -22,7 +22,8 @@
 
 
 ## Papers
-- Environmental Sound Classification A Descriptive review of the literature - proposto da Anna; letto da:  
+- Environmental Sound Classification A Descriptive review of the literature - proposto da Anna; letto da:
+- Sound Event Detection: A tutorial - proposto da Chiara; letto da Chiara
 
 ## Branches
 
