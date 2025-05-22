@@ -25,9 +25,13 @@
 
 **Da leggere:**
 - Environmental Sound Classification A Descriptive review of the literature - proposto da Anna
+- Audio Classification Method Based on Machine Learning - proposto da Anna
+- Sound Classification Using Convolutional Neural Network and Tensor Deep Stacking Network - proposto da Anna
+- ENVIRONMENTAL SOUND CLASSIFICATION WITH CONVOLUTIONAL NEURAL NETWORKS - proposto da Anna
   
 **Chiara:**
-- Sound Event Detection: A tutorial - proposto da Chiara (l'articolo approfondisce molto bene le problematiche legate alla SED ed è possibile estrapolare una baseline)
+- Sound Event Detection: A tutorial - proposto da Chiara (è possibile prendere spunto per la costruzione di una baseline)
+- A FRAMEWORK FOR THE ROBUST EVALUATION OF SOUND EVENT DETECTION - proposto da Chiara (non utile)
 
 **Anna:**
 
