@@ -34,6 +34,7 @@
 - *Robust Sound Event Classification Using Deep Neural Networks* - proposto da Chiara (datato)
 - *ESC: Dataset for Environmental Sound Classification* - proposto da Filippo
 - *ENVIRONMENTAL SOUND CLASSIFICATION WITH CONVOLUTIONAL NEURAL NETWORKS* - proposto da Anna (utile per creare la baseline)
+- A Systematic Literature Review on Sound Event Detection and Classification - proposto da Chiara ( si evince come per buone prestazioni siano necessarie CNN, non entra nel dettaglio, si dovrebbero leggere i singoli papers per capire meglio)
 
 **Anna:**
 
