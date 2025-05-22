@@ -33,6 +33,7 @@
 - Sound Event Detection: A tutorial - proposto da Chiara (è possibile prendere spunto per la costruzione di una baseline)
 - A FRAMEWORK FOR THE ROBUST EVALUATION OF SOUND EVENT DETECTION - proposto da Chiara (non utile)
 - Robust Sound Event Classification Using Deep Neural Networks - proposto da Chiara (datato)
+- ESC: Dataset for Environmental Sound Classification - proposto da Filippo
 
 **Anna:**
 
