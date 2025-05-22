@@ -24,22 +24,23 @@
 ## Papers
 
 **Da leggere:**
-- Environmental Sound Classification A Descriptive review of the literature - proposto da Anna
-- Audio Classification Method Based on Machine Learning - proposto da Anna
-- Sound Classification Using Convolutional Neural Network and Tensor Deep Stacking Network - proposto da Anna
+- *Environmental Sound Classification A Descriptive review of the literature* - proposto da Anna
+- *Audio Classification Method Based on Machine Learning* - proposto da Anna
+- *Sound Classification Using Convolutional Neural Network and Tensor Deep Stacking Network* - proposto da Anna
 
   
 **Chiara:**
-- Sound Event Detection: A tutorial - proposto da Chiara (è possibile prendere spunto per la costruzione di una baseline)
-- A FRAMEWORK FOR THE ROBUST EVALUATION OF SOUND EVENT DETECTION - proposto da Chiara (non utile)
-- Robust Sound Event Classification Using Deep Neural Networks - proposto da Chiara (datato)
-- ESC: Dataset for Environmental Sound Classification - proposto da Filippo
-- ENVIRONMENTAL SOUND CLASSIFICATION WITH CONVOLUTIONAL NEURAL NETWORKS - proposto da Anna (utile per creare la baseline)
+- *Sound Event Detection: A tutorial* - proposto da Chiara (è possibile prendere spunto per la costruzione di una baseline)
+- *A FRAMEWORK FOR THE ROBUST EVALUATION OF SOUND EVENT DETECTION* - proposto da Chiara (non utile)
+- *Robust Sound Event Classification Using Deep Neural Networks* - proposto da Chiara (datato)
+- *ESC: Dataset for Environmental Sound Classification* - proposto da Filippo
+- *ENVIRONMENTAL SOUND CLASSIFICATION WITH CONVOLUTIONAL NEURAL NETWORKS* - proposto da Anna (utile per creare la baseline)
 
 **Anna:**
 
 **Filippo:**
-- ESC Dataset for Environmental Sound Classification - proposto da Filippo (l'articolo spiega com'è e fatto il dataset che useremo e perché questo dataset è valido per ciò che useremo. Inoltre compara le performance umane di riconoscimento dei suoni a quelle del loro algoritmo, per quanto semplice, di SEC)
+- *ESC Dataset for Environmental Sound Classification* - proposto da Filippo (l'articolo spiega com'è e fatto il dataset che useremo e perché questo dataset è valido per ciò che useremo. Inoltre compara le performance umane di riconoscimento dei suoni a quelle del loro algoritmo, per quanto semplice, di SEC)
+- *Deep Convolutional Neural Networks and Data Augmentation for Environmental Sound Classification* - proposto da Filippo (punto interessante in cui spiega che fare data augmentation su alcune classi ne peggiora le prestazioni di classificazione)
 
 **Francesca:**
 
