@@ -22,8 +22,18 @@
 
 
 ## Papers
-- Environmental Sound Classification A Descriptive review of the literature - proposto da Anna; letto da:
-- Sound Event Detection: A tutorial - proposto da Chiara; letto da Chiara (l'articolo approfondisce molto bene le problematiche legate alla SED ed è possibile estrapolare una baseline)
+
+**Da leggere:**
+- Environmental Sound Classification A Descriptive review of the literature - proposto da Anna
+  
+**Chiara:**
+- Sound Event Detection: A tutorial - proposto da Chiara (l'articolo approfondisce molto bene le problematiche legate alla SED ed è possibile estrapolare una baseline)
+
+**Anna:**
+
+**Filippo:**
+
+**Francesca:**
 
 ## Branches
 
