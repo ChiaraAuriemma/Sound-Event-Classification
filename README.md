@@ -32,7 +32,7 @@
 **Chiara:**
 - Sound Event Detection: A tutorial - proposto da Chiara (è possibile prendere spunto per la costruzione di una baseline)
 - A FRAMEWORK FOR THE ROBUST EVALUATION OF SOUND EVENT DETECTION - proposto da Chiara (non utile)
-- Robust Sound Event Classification Using Deep Neural Networks - proposto da Chiara
+- Robust Sound Event Classification Using Deep Neural Networks - proposto da Chiara (datato)
 
 **Anna:**
 
