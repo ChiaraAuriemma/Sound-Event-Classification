@@ -13,7 +13,7 @@
 ## Checklist
 
 ### Macrotasks
-1.  Lettura readme entro venerdì 23 Maggio 2025 🔄
+1.  Lettura papers entro venerdì 23 Maggio 2025 🔄
 
 ### Microtasks Completate
 
