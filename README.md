@@ -1,4 +1,4 @@
-# Sound-Event-Classification# Sound-Event-Classification
+# Sound-Event-Classification
 
 ## Group:
 
@@ -22,8 +22,9 @@
 
 
 ## Papers
-- Environmental Sound Classification A Descriptive review of the literature - proposto da Anna; letto da:
+- Environmental Sound Classification A Descriptive review of the literature - proposto da Anna; letto da: Filippo
 - Sound Event Detection: A tutorial - proposto da Chiara; letto da Chiara (l'articolo approfondisce molto bene le problematiche legate alla SED ed è possibile estrapolare una baseline)
+- ESC Dataset for Environmental Sound Classification - proposto da Filippo letto da: Filippo (l'articolo spiega com'è e fatto il dataset che useremo e perché questo dataset è valido per ciò che useremo)
 
 ## Branches
 
