@@ -37,7 +37,8 @@
 **Anna:**
 
 **Filippo:**
-- ESC Dataset for Environmental Sound Classification - proposto da Filippo letto da: Filippo (l'articolo spiega com'è e fatto il dataset che useremo e perché questo dataset è valido per ciò che useremo)
+- ESC Dataset for Environmental Sound Classification - proposto da Filippo (l'articolo spiega com'è e fatto il dataset che useremo e perché questo dataset è valido per ciò che useremo. Inoltre compara le performance umane di riconoscimento dei suoni a quelle del loro algoritmo, per quanto semplice, di SEC)
+
 **Francesca:**
 
 ## Branches
