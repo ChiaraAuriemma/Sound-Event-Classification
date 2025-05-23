@@ -23,6 +23,13 @@
 
 ## Papers
 
+**Data Augmentation e Pre-propcessing:**
+
+**Baseline scelta (CRNN):**
+
+**Altre architetture:**
+
+
 **Da leggere:**
 - *Audio Classification Method Based on Machine Learning* - proposto da Anna
 - *Sound Classification Using Convolutional Neural Network and Tensor Deep Stacking Network* - proposto da Anna
