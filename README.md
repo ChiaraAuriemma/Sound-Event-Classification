@@ -24,10 +24,18 @@
 ## Papers
 
 **Data Augmentation e Pre-propcessing:**
+- *Deep Learning-based Environmental Sound Classification Using Feature Fusion and Data Enhancement* - proposto da Francesca (usa il nostro dataset e da data augmentation)
 
 **Baseline scelta (CRNN):**
 
 **Altre architetture:**
+- *Sound Events Recognition and Classification Using Machine Learning Techniques* - fra (molto sintetico, utilizza il nostro dataset)
+- *SOUND CLASSIFICATION SYSTEM USING MACHINE LEARNING TECHNIQUES* - proposto da Francesca (ha una tabella dei pro e contro che mi sembra ben fatta, ossia per ogni specifico task suggerisce quale tecnica utilizzare)
+- *Formula-Supervised Sound Event Detection: Pre-Training Without Real Data* - prop da fra (non c'entra ma mi ha interessata ed è 2025)
+
+**Spiegoni teorici generali sul machine learning:**
+- *An overview of machine learning classification techniques* - proposto da Francesca (può tornarci utile quando scriveremo il report per argomentare come mai abbiamo scelto un metodo piuttosto che un altro)
+- *A Survey of Audio Classification Using Deep Learning* - proposto da Francesca (spiega i vantaggi di varie tecniche con riferimento all'audio classification)
 
 
 **Da leggere:**
@@ -54,12 +62,10 @@
 - *Environmental Sound Classification A Descriptive review of the literature* - proposto da Anna (da tenere in considerazione perché ci sono tutte le reti allo stato dell'arte conforntate fra loro e con il relativo articolo)
 
 **Francesca:**
-- *An overview of machine learning classification techniques* - proposto da Francesca (può tornarci utile quando scriveremo il report per argomentare come mai abbiamo scelto un metodo piuttosto che un altro)
-- *A Survey of Audio Classification Using Deep Learning* - proposto da Francesca (spiega i vantaggi di varie tecniche con riferimento all'audio classification)
-- *SOUND CLASSIFICATION SYSTEM USING MACHINE LEARNING TECHNIQUES* - proposto da Francesca (ha una tabella dei pro e contro che mi sembra ben fatta, ossia per ogni specifico task suggerisce quale tecnica utilizzare)
-- *Deep Learning-based Environmental Sound Classification Using Feature Fusion and Data Enhancement* - proposto da Francesca (usa il nostro dataset e da data augmentation)
-- *Formula-Supervised Sound Event Detection: Pre-Training Without Real Data* - prop da fra (non c'entra ma mi ha interessata)
-- *Sound Events Recognition and Classification Using Machine Learning Techniques* - p d f (molto sintetico, utilizza il nostro dataset)
+
+
+
+
 
 ## Branches
 
