@@ -14,6 +14,7 @@
 
 ### Macrotasks
 1.  Lettura papers entro venerdì 23 Maggio 2025 🔄
+2.  Pronti partenza via lunedì 26 Maggio 2025 14:30 - 18:30
 
 ### Microtasks Completate
 
