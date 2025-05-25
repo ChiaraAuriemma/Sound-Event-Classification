@@ -38,21 +38,19 @@
 - *SOUND CLASSIFICATION SYSTEM USING MACHINE LEARNING TECHNIQUES* - proposto da Francesca (ha una tabella dei pro e contro che mi sembra ben fatta, ossia per ogni specifico task suggerisce quale tecnica utilizzare)
 - *Formula-Supervised Sound Event Detection: Pre-Training Without Real Data* - prop da fra (non c'entra ma mi ha interessata ed è 2025)
 - *ENVIRONMENTAL SOUND CLASSIFICATION WITH CONVOLUTIONAL NEURAL NETWORKS* (baseline di una CNN)
+- Convolutional Neural Network based Audio Event Classification (proposta una CNN, interessante perché vengono confrontate piú versioni)
 
 **Spiegoni teorici generali sul machine learning:**
 - *An overview of machine learning classification techniques* - proposto da Francesca (può tornarci utile quando scriveremo il report per argomentare come mai abbiamo scelto un metodo piuttosto che un altro)
 - *A Survey of Audio Classification Using Deep Learning* - proposto da Francesca (spiega i vantaggi di varie tecniche con riferimento all'audio classification)
 
+**Review letteratura:**
+- A Systematic Literature Review on Sound Event Detection and Classification (vengono confrontate piú soluzioni, utile per la ricerca di altri paper)
+
 
 **Da leggere:**
 - *Audio Classification Method Based on Machine Learning* - proposto da Anna
 - *Sound Classification Using Convolutional Neural Network and Tensor Deep Stacking Network* - proposto da Anna
-
-  
-**Chiara:**
-- A Systematic Literature Review on Sound Event Detection and Classification - proposto da Chiara ( si evince come per buone prestazioni siano necessarie CNN, non entra nel dettaglio, si dovrebbero leggere i singoli papers per capire meglio)
-- Convolutional Neural Network based Audio Event Classification (estrapolabile una baseline, ma rimane simile ad altre già viste)
-
 
 **Filippo:**
 - *ESC Dataset for Environmental Sound Classification* - proposto da Filippo (l'articolo spiega com'è fatto il dataset che useremo e perché questo dataset è valido per ciò che useremo. Inoltre compara le performance umane di riconoscimento dei suoni a quelle del loro algoritmo, per quanto semplice, di SEC)
