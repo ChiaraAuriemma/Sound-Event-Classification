@@ -21,10 +21,12 @@
 ## Papers
 
 **Analisi Dataset:**
-- *ESC: Dataset for Environmental Sound Classification* 
+- *ESC Dataset for Environmental Sound Classification* - proposto da Filippo (l'articolo spiega com'è fatto il dataset che useremo e perché questo dataset è valido per ciò che useremo. Inoltre compara le performance umane di riconoscimento dei suoni a quelle del loro algoritmo, per quanto semplice, di SEC)
 
 **Data Augmentation e Pre-propcessing:**
 - *Deep Learning-based Environmental Sound Classification Using Feature Fusion and Data Enhancement* - proposto da Francesca (usa il nostro dataset e da data augmentation)
+- *Deep Convolutional Neural Networks and Data Augmentation for Environmental Sound Classification* - proposto da Filippo (punto interessante in cui spiega che fare data augmentation su alcune classi ne peggiora le prestazioni di classificazione)
+- *A Software framework for musical data augmentation* - proposto da Filippo (software usato per audio data augmentation ma il paper è dell'1 quando non c'era nessuno)
 
 **Baseline scelta (CRNN):**
 - *Sound Event Detection: A tutorial* (è possibile prendere spunto per la costruzione di una baseline)
@@ -43,18 +45,12 @@
 
 **Review letteratura:**
 - A Systematic Literature Review on Sound Event Detection and Classification (vengono confrontate piú soluzioni, utile per la ricerca di altri paper)
+- *Automatic Recognition of Urban Enviromental Sound Events* - proposto da Filippo (datato, di interessante c'è che può tornare utile trattare il silenzio delle tracce audio come noise eliminandolo)
 
 
 **Da leggere:**
 - *Audio Classification Method Based on Machine Learning* - proposto da Anna
 - *Sound Classification Using Convolutional Neural Network and Tensor Deep Stacking Network* - proposto da Anna
-
-**Filippo:**
-- *ESC Dataset for Environmental Sound Classification* - proposto da Filippo (l'articolo spiega com'è fatto il dataset che useremo e perché questo dataset è valido per ciò che useremo. Inoltre compara le performance umane di riconoscimento dei suoni a quelle del loro algoritmo, per quanto semplice, di SEC)
-- *Deep Convolutional Neural Networks and Data Augmentation for Environmental Sound Classification* - proposto da Filippo (punto interessante in cui spiega che fare data augmentation su alcune classi ne peggiora le prestazioni di classificazione)
-- *A Software framework for musical data augmentation* - proposto da Filippo (software usato per audio data augmentation ma il paper è dell'1 quando non c'era nessuno)
-- *Automatic Recognition of Urban Enviromental Sound Events* - proposto da Filippo (datato, di interessante c'è che può tornare utile trattare il silenzio delle tracce audio come noise eliminandolo)
-- *Environmental Sound Classification A Descriptive review of the literature* - proposto da Anna (da tenere in considerazione perché ci sono tutte le reti allo stato dell'arte conforntate fra loro e con il relativo articolo)
 
 
 ## Branches
