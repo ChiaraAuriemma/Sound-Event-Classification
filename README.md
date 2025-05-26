@@ -46,7 +46,7 @@
 **Review letteratura:**
 - A Systematic Literature Review on Sound Event Detection and Classification (vengono confrontate piú soluzioni, utile per la ricerca di altri paper)
 - *Automatic Recognition of Urban Enviromental Sound Events* - proposto da Filippo (datato, di interessante c'è che può tornare utile trattare il silenzio delle tracce audio come noise eliminandolo)
-
+- Environmental Sound Classification: A descriptive review of the literature
 
 **Da leggere:**
 - *Audio Classification Method Based on Machine Learning* - proposto da Anna
