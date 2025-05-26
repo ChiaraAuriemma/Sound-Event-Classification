@@ -13,8 +13,13 @@
 ## Checklist
 
 ### Macrotasks
-1.  Lettura papers entro venerdì 23 Maggio 2025 🔄
-2.  Pronti partenza via lunedì 26 Maggio 2025 14:30 - 18:30
+1.  Lettura papers entro venerdì 23 Maggio 2025 ✅
+2.  Pronti partenza via lunedì 26 Maggio 2025 14:30 - 18:30 - Implementazione caricamento e preparazione dataset ✅
+3.  Checkino todos juntos 31 Maggio 2025 9:00 - 12:00
+
+### Microtasks Da Completare
+- Lavorare su data augmentation: implementare funzioni per diverse tecniche e spiegare come e perché (Felipe y Francisca) 💣
+- Lavorare su CRNN (Clarita y Añita) 🪩
 
 ### Microtasks Completate
 
