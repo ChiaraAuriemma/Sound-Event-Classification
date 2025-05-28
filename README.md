@@ -18,11 +18,10 @@
 3.  Checkino todos juntos 31 Maggio 2025 9:00 - 12:00
 
 ### Microtasks Da Completare
-- Lavorare su data augmentation: implementare funzioni per diverse tecniche e spiegare come e perché (Felipe y Francisca) 💣
 - Lavorare su CRNN (Clarita y Añita) 🪩
 
 ### Microtasks Completate
-
+- Lavorare su data augmentation: implementare funzioni per diverse tecniche e spiegare come e perché (Felipe y Francisca) 💣 
 ## Papers
 
 **Analisi Dataset:**
