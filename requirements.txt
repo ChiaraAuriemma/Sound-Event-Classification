@@ -1,0 +1,10 @@
+IPython
+tqdm
+numpy
+matplotlib
+librosa
+scikit-learn
+tensorflow
+pandas
+audiomentations
+pedalboard
