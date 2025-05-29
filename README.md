@@ -22,6 +22,9 @@
 
 ### Microtasks Completate
 - Lavorare su data augmentation: implementare funzioni per diverse tecniche e spiegare come e perché (Felipe y Francisca) 💣 
+- Aggiungere cross-validation (i risultati dell'operazione son in X_train_fold, X_val_fold = X_trainval, y_train_fold, y_val_fold da uasare per il training e per la validation al posto delle rispettive variabili senza _fold). Per poter implementare la valutazione, serve il modello 🔝
+
+
 ## Papers
 
 **Analisi Dataset:**
