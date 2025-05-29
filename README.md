@@ -38,6 +38,7 @@
 **Baseline scelta (CRNN):**
 - *Sound Event Detection: A tutorial* (è possibile prendere spunto per la costruzione di una baseline)
 - Attention_based_convolutional_recurrent_neural_network_for_environmental_sound_classification (fa una proposta piú avanzata che potremmo usare per migliorare la baseline)
+- Convolutional Recurrent Neural Networks for Urban Sound Classification using Raw Waveforms 
 
 **Altre architetture:**
 - *Sound Events Recognition and Classification Using Machine Learning Techniques* - fra (molto sintetico, utilizza il nostro dataset)
