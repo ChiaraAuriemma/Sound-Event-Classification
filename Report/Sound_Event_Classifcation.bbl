@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{#1}
+\def\UrlFont{\rmfamily}
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{waspaa21web}
+\url{http://www.waspaa.com}.
+
+\bibitem{eWilliams1999}
+E.~Williams, \emph{Fourier Acoustics: Sound Radiation and Nearfield Acoustic Holography}.\hskip 1em plus 0.5em minus 0.4em\relax London, UK: Academic Press, 1999.
+
+\bibitem{cJones2003}
+C.~Jones, A.~Smith, and E.~Roberts, ``A sample paper in conference proceedings,'' in \emph{Proc. IEEE ICASSP}, vol.~II, 2003, pp. 803--806.
+
+\bibitem{aSmith2000}
+A.~Smith, C.~Jones, and E.~Roberts, ``A sample paper in journals,'' \emph{IEEE Trans. Signal Process.}, vol.~62, pp. 291--294, Jan. 2000.
+
+\end{thebibliography}
