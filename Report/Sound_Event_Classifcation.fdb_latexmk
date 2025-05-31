@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Sound_Event_Classifcation"] 1748607378.61626 "Sound_Event_Classifcation.aux" "Sound_Event_Classifcation.bbl" "Sound_Event_Classifcation" 1748607412.43686 0
+["bibtex Sound_Event_Classifcation"] 1748607378.61626 "Sound_Event_Classifcation.aux" "Sound_Event_Classifcation.bbl" "Sound_Event_Classifcation" 1748682917.6366 0
   "./IEEEtran.bst" 1611999598 56730 967ffc1c31f2d8f0374b4bda826db6ab ""
   "./refs21.bib" 1611999598 1378 c8787a8ebc0572824ecba4ce41089683 ""
-  "Sound_Event_Classifcation.aux" 1748607412.20541 2619 ee66235f5e8ad2ed7115a4ab869278cd "pdflatex"
+  "Sound_Event_Classifcation.aux" 1748682917.38712 2619 ee66235f5e8ad2ed7115a4ab869278cd "pdflatex"
   (generated)
   "Sound_Event_Classifcation.bbl"
   "Sound_Event_Classifcation.blg"
   (rewritten before read)
-["pdflatex"] 1748607411.85851 "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" "Sound_Event_Classifcation.pdf" "Sound_Event_Classifcation" 1748607412.437 0
+["pdflatex"] 1748682917.025 "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" "Sound_Event_Classifcation.pdf" "Sound_Event_Classifcation" 1748682917.63675 0
   "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" 1748607411.68566 9097 f9cb268103f831478b5a5b3ec562d936 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -89,8 +89,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1748601819 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1748601732 3345725 22865939da3cc8253633bd97f02f996f ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "MAECapstoneCourse.sty" 1748607190.02812 15245 36a1daa440bffc082a7c14d601ea6d37 ""
-  "Sound_Event_Classifcation.aux" 1748607412.20541 2619 ee66235f5e8ad2ed7115a4ab869278cd "pdflatex"
+  "MAECapstoneCourse.sty" 1748610054.47346 15246 5f2bb3e6c9a18e4f9da75e02e84e76e7 ""
+  "Sound_Event_Classifcation.aux" 1748682917.38712 2619 ee66235f5e8ad2ed7115a4ab869278cd "pdflatex"
   "Sound_Event_Classifcation.bbl" 1748607378.7179 1323 4dde38834f075ffb4a99419a1a18483d "bibtex Sound_Event_Classifcation"
   "Sound_Event_Classifcation.tex" 1748607411.68566 9097 f9cb268103f831478b5a5b3ec562d936 ""
   "fig1a.pdf" 1611999598 34809 c7364867133d5cadf3ee33efe8e4a6ae ""

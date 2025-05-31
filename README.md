@@ -15,14 +15,22 @@
 ### Macrotasks
 1.  Lettura papers entro venerdì 23 Maggio 2025 ✅
 2.  Pronti partenza via lunedì 26 Maggio 2025 14:30 - 18:30 - Implementazione caricamento e preparazione dataset ✅
-3.  Checkino todos juntos 31 Maggio 2025 9:00 - 12:00
+3.  Checkino todos juntos 31 Maggio 2025 9:00 - 12:00 ✅
+4.  Checkino todos juntos 4 Junio 2025 14:00 - 19:00 
 
 ### Microtasks Da Completare
-- Lavorare su CRNN (Clarita y Añita) 🪩
+- Invertire posizione di pre-processing (Felipe y Francisca) 💣 
+- Fitting dei modelli con dataset pre-processato
+    - Modello CRNN 3: Chiarina che vuole rimettere insieme i pezzi
+    - Modello CRNN 2: Francisca che però è perplessa per la feature extraction
+    - Modello CNN - Primo modello da Chiarina: Añita
+- Paper: Filippo
+- Seguire José
 
 ### Microtasks Completate
 - Lavorare su data augmentation: implementare funzioni per diverse tecniche e spiegare come e perché (Felipe y Francisca) 💣 
 - Aggiungere cross-validation (i risultati dell'operazione son in X_train_fold, X_val_fold, y_train_fold, y_val_fold da uasare per il training e per la validation al posto delle rispettive variabili senza _fold). Per poter implementare la valutazione, serve il modello 🔝
+- Lavorare su CRNN (Clarita y Añita) 🪩
 
 
 ## Papers
