@@ -113,12 +113,7 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT ./fig1a.pdf
-INPUT ./fig1a.pdf
-INPUT ./fig1a.pdf
 OUTPUT Sound_Event_Classifcation.pdf
-INPUT ./fig1a.pdf
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -139,6 +134,11 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/times/ptmbi7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT ./fig1a.pdf
+INPUT ./fig1a.pdf
+INPUT ./fig1a.pdf
+INPUT ./fig1a.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT ./Sound_Event_Classifcation.bbl
