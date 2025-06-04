@@ -4,7 +4,9 @@ numpy
 matplotlib
 librosa
 scikit-learn
-tensorflow
+torch
+torchaudio
+torch-audiomentations
 pandas
-audiomentations
 pedalboard
+sox
