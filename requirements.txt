@@ -7,6 +7,7 @@ scikit-learn
 torch
 torchaudio
 torch-audiomentations
+audiomentations
 pandas
 pedalboard
 more-itertools
