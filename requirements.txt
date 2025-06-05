@@ -9,5 +9,4 @@ torchaudio
 torch-audiomentations
 pandas
 pedalboard
-sox
 more-itertools
