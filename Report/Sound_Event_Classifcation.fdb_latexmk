@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Sound_Event_Classifcation"] 1749039054.81088 "Sound_Event_Classifcation.aux" "Sound_Event_Classifcation.bbl" "Sound_Event_Classifcation" 1749039055.49168 0
+["bibtex Sound_Event_Classifcation"] 1749303732.39103 "Sound_Event_Classifcation.aux" "Sound_Event_Classifcation.bbl" "Sound_Event_Classifcation" 1749303739.64914 0
   "./IEEEtran.bst" 1611999598 56730 967ffc1c31f2d8f0374b4bda826db6ab ""
-  "./refs21.bib" 1749038879.13018 6576 68dab6925780f6b6f676b2e6e430ba5f ""
-  "Sound_Event_Classifcation.aux" 1749039055.25839 3248 f04dfe98628010977c3db2bb488ff328 "pdflatex"
+  "./refs21.bib" 1749302851.73248 6841 2b342b860265c6b86024d85e2228aaa5 ""
+  "Sound_Event_Classifcation.aux" 1749303739.42031 2078 4f544dda01ea92d9db33e6b0912b02c7 "pdflatex"
   (generated)
   "Sound_Event_Classifcation.bbl"
   "Sound_Event_Classifcation.blg"
   (rewritten before read)
-["pdflatex"] 1749039054.9111 "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" "Sound_Event_Classifcation.pdf" "Sound_Event_Classifcation" 1749039055.49183 0
-  "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" 1749039054.05756 12161 9ad55a834870eef91ed0377b1ddf934f ""
+["pdflatex"] 1749303739.06842 "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" "Sound_Event_Classifcation.pdf" "Sound_Event_Classifcation" 1749303739.6493 0
+  "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" 1749303738.91463 9719 a844d1b8bfee7d094e9af9c1e7473460 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -38,10 +38,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1248133631 32442 c975af247b6702f7ca0c299af3616b80 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1136849748 45758 19968a0990191524e34e1994d4a31cb6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
@@ -90,9 +87,9 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1748601732 3345725 22865939da3cc8253633bd97f02f996f ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "MAECapstoneCourse.sty" 1748610054.47346 15246 5f2bb3e6c9a18e4f9da75e02e84e76e7 ""
-  "Sound_Event_Classifcation.aux" 1749039055.25839 3248 f04dfe98628010977c3db2bb488ff328 "pdflatex"
-  "Sound_Event_Classifcation.bbl" 1749039054.90901 3109 704c8155f564b4f104e5ed1d4c3d8e41 "bibtex Sound_Event_Classifcation"
-  "Sound_Event_Classifcation.tex" 1749039054.05756 12161 9ad55a834870eef91ed0377b1ddf934f ""
+  "Sound_Event_Classifcation.aux" 1749303739.42031 2078 4f544dda01ea92d9db33e6b0912b02c7 "pdflatex"
+  "Sound_Event_Classifcation.bbl" 1749303732.49335 3414 d5a15da208a6d09e18ee04d9701cd271 "bibtex Sound_Event_Classifcation"
+  "Sound_Event_Classifcation.tex" 1749303738.91463 9719 a844d1b8bfee7d094e9af9c1e7473460 ""
   "fig1a.pdf" 1611999598 34809 c7364867133d5cadf3ee33efe8e4a6ae ""
   "url.sty" 1611999598 21932 e3a9cf32ee9b853b42be14c2f25b873c ""
   (generated)

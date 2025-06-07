@@ -41,6 +41,11 @@ A.~Bansal and N.~K. Garg, ``Environmental sound classification: A descriptive re
 \bibitem{piczak2015dataset}
 K.~J. Piczak, ``Esc: Dataset for environmental sound classification,'' in \emph{Proceedings of the 23rd Annual ACM Conference on Multimedia}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2015, pp. 1015--1018.
 
+\bibitem{scikit-learn_stratifiedkfold}
+\BIBentryALTinterwordspacing
+S.~learn developers, ``Stratifiedkfold — scikit-learn 1.5.2 documentation,'' 2025. [Online]. Available: \url{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html}
+\BIBentrySTDinterwordspacing
+
 \bibitem{salamon2017deep}
 J.~Salamon and J.~P. Bello, ``Deep convolutional neural networks and data augmentation for environmental sound classification,'' \emph{IEEE Signal Processing Letters}, vol.~24, no.~3, pp. 279--283, 2017.
 
