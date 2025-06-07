@@ -17,7 +17,7 @@
 2.  Pronti partenza via lunedì 26 Maggio 2025 14:30 - 18:30 - Implementazione caricamento e preparazione dataset ✅
 3.  Checkino todos juntos 31 Maggio 2025 9:00 - 12:00 ✅
 4.  Checkino todos juntos 4 Junio 2025 14:00 - 19:00 ✅
-5.  Checkino todos juntos 5 Junio 2025 15:00 - 16:00 
+5.  Checkino todos juntos 5 Junio 2025 9:00 - 10:00 ✅
 
 ### Microtasks Da Completare
 Cose da fare:
