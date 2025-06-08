@@ -25,7 +25,6 @@
 ### Microtasks Da Completare
 Cose da fare:
 - ⁠Scrivere la parte del paper relativa alla pipeline creata
-- Provare diversi tipi di input (quelli proposti da José nel lab 1) , così magari abbiamo nel paper una nostra tabellina con i confronti con varie prove
 - ⁠⁠Raccogliere tutte  le informazioni disponibili dai paper letti e dai tentativi fatti per scrivere una parte del paper dove facciamo vari confronti con altre architetture (stato dell’arte ma anche le nostre prove )
 - Sistemare il github
 - Sistemare markdown notebook
@@ -43,6 +42,8 @@ Modelli:
 - Capire se abbandonare definitivamente tensorflow ❌
 - sistemare il notebook con il modello per avere la versione definitiva con tutta la pipeline da allegare al paper ✅
 - runnare il notebook definitivo con la cross validation (da qui in poi non lo tocchiamo più) ✅
+- Provare diversi tipi di input (quelli proposti da José nel lab 1) , così magari abbiamo nel paper una nostra tabellina con i confronti con varie prove ✅
+
 
 ## Papers
 
