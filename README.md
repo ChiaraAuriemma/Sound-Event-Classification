@@ -18,14 +18,16 @@
 3.  Checkino todos juntos 31 Maggio 2025 9:00 - 12:00 ✅
 4.  Checkino todos juntos 4 Junio 2025 14:00 - 19:00 ✅
 5.  Checkino todos juntos 5 Junio 2025 9:00 - 10:00 ✅
+6.  Checkino todos juntos 6 Junio 2025 17:00 - 19:00 ✅
+7.  Checkino todos juntos 7 Junio 2025 9:00 - 12:00 ✅
+8.  Checkino todos juntos 9 Junio 2025 10:30 - 13:00 
 
 ### Microtasks Da Completare
 Cose da fare:
-- ⁠runnare il notebook definitivo con la cross validation (da qui in poi non lo tocchiamo più)
 - ⁠Scrivere la parte del paper relativa alla pipeline creata
-- Provare diversi tipi di input (quelli proposti da José nel lab 1) , così magari abbiamo nel paper una nostra tabellina con i confronti con varie prove
 - ⁠⁠Raccogliere tutte  le informazioni disponibili dai paper letti e dai tentativi fatti per scrivere una parte del paper dove facciamo vari confronti con altre architetture (stato dell’arte ma anche le nostre prove )
 - Sistemare il github
+- Sistemare markdown notebook
 
 ### Microtasks Completate
 - Lavorare su data augmentation: implementare funzioni per diverse tecniche e spiegare come e perché (Felipe y Francisca) 💣 
@@ -39,6 +41,9 @@ Modelli:
 - convertire il modello in pytorch e capire se runna in locale in un tempo umano ❌
 - Capire se abbandonare definitivamente tensorflow ❌
 - sistemare il notebook con il modello per avere la versione definitiva con tutta la pipeline da allegare al paper ✅
+- runnare il notebook definitivo con la cross validation (da qui in poi non lo tocchiamo più) ✅
+- Provare diversi tipi di input (quelli proposti da José nel lab 1) , così magari abbiamo nel paper una nostra tabellina con i confronti con varie prove ✅
+
 
 ## Papers
 
