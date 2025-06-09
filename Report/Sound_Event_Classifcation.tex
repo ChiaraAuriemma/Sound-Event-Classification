@@ -76,7 +76,7 @@ As a baseline of this project we chose a simple 2D Convolutional Neural Network 
 We chose a 2D Convolutional network since we have, as input, a log mel-spectrogram. In turn, this kind of input has been chosen in order to feed the network with
 temporal-frequency correalated data, approach widely followed in the literature. However, the results obtained with this architecture were not satisfactory,
 so we decided to improve the model by adding some layers and using a more complex architecture. After several attempts with Recurrent Convolutional Neural Networks (CRNN),
-we opted for a multi-branch convolutional neural network (MBCNN) architecture inspired by the work of Enes Furkan Örnek \cite{audio_classification_esc50}.
+we opted for a multi-branch convolutional neural network (MBCNN) architecture inspired by the work of Enes Furkan Örnek \cite{audio_classification_esc50, latifi2025classificationheartsoundsusing}.
 
 \subsection{Feature extraction}
 \label{sec:feature_extraction}
@@ -89,10 +89,33 @@ the signal preserving its original sample rate. The parameters are the following
 \end{itemize}
 The output is a 2D array of shape (128, 1723) representing how energy in different Mel frequency bands evolves over time.
 
-\subsection{Method description}
-\label{sec:method_description}
-Kernel size che cambia.
+\subsection{Model description}
+\label{sec:model_description}
+Our implementation utilizes a bi-dimensional Convolutional Neural Network (CNN)
+with four parallel branches, each extracting different levels of information from the
+input data using specifically calibrated kernel sizes. 
+We highlight that our model is working in a peculiar way with the 2D layers since one dimension is, layer-by-layer, alternatively
+imposed equal to 1. With this method, each branch alternates between horizontal and vertical filter orientations,
+enabling efficient extraction of localized patterns across both time and frequency domains.
+After each Conv2D layer, we apply batch normalization and ReLU activationin order to ensure training stability and non-linearity.
 
+After processing through these branches, the outputs are merged via element-wise addition, followed by additional convolutional
+layers with larger filter depths to further abstract the combined feature maps. 
+A global average pooling layer condenses the
+spatial information, and the network concludes with a dense softmax layer that outputs class probabilities over 50 categories.
+
+The model is optimized using the Adam optimizer with AMSGrad, and trained using sparse categorical cross-entropy loss.
+
+The theoretical justification for our filter size selection derives from signal processing
+principles in audio analysis. Smaller filters (1×8) effectively capture localized
+patterns and high-frequency components, while larger filters (1×64) extract broader
+patterns and low-frequency information.
+
+Not only mathematical reasons justify our approach, but also biological ones. In facts, the human auditory system employs a wave bank filter mechanism
+to capture specific frequency components in audio signals, with different regions of the
+basilar membrane responding to distinct frequency ranges. By incorporating parallel
+branches with carefully selected filter sizes, the network similarly detects patterns within specific frequency ranges, enabling multiscale
+feature representation.
 \section{Evaluation}
 \label{sec:evaluation}
 
@@ -188,19 +211,132 @@ For all the results presented in this paper, the training dataset has been prepr
 The evaluation of the sound event classification system is performed using several metrics to assess its performance.
 Firstly, the test accuracy, the classification reports and the confusion matrix are computed to evaluate the overall performance of the model.
 
+To evaluate our model, we use 5 folds cross-validation, which allows us to obtain a more robust estimate of the model's performance.
+Furthermore, we ensured that there is no data leakage between training and validation sets by doing data augmentation only on the
+training set after the splitting.
 
+The training of the models have been performed on the A100 GPU by Google Colab.
 
 
 \section{Results}
 \label{sec:results}
+\subsection{Main model results}
+\label{sec:main_model_results}
+[tutte le immagini per ogni fold]
+The average test accuracy over the 5 folds reached by the model is 86\% with an average loss of 0.63.
+The performnce for each fold is reported in Table~\ref{tab:folds_results}.
 
-Ci vanno messi tutti i risultati du quello che abbiamo fatto sul dataset: possiamo così giustificare gli errori di alcune classificazioni.
-\textit{La luna vide dal cielo}
-\\\textit{Rosita baciar Manuelo}
-\\\textit{Con tanto languor, con tanto ardor}
-\\\textit{Che s'ammantò d'un velo}
+[Tabella]
 
-\section{ACKNOWLEDGMENT}
+\begin{table}[ht]
+  \centering
+  \caption{Results of the main model for each fold.}
+  \label{tab:folds_results}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Fold & Test Accuracy & Test Loss \\
+    \hline
+    1 & 0.85 & 0.65 \\
+    2 & 0.87 & 0.60 \\
+    3 & 0.88 & 0.58 \\
+    4 & 0.86 & 0.62 \\
+    5 & 0.85 & 0.64 \\
+    \hline
+    Average & 0.86 & 0.63 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+In [Figura] the confusion matrix of the model with the best accuracy (88\%) is reported. The
+labeling of the classes is reported in the appendix.
+
+
+And the reoprts in the tables~\ref{tab:classification_report_fold_3} and ~\ref{tab:classification_report_fold_4}.
+\begin{table}[ht]
+  \centering
+  \caption{Results of the main model for each fold.}
+  \label{tab:folds_results}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Fold & Test Accuracy & Test Loss \\
+    \hline
+    1 & 0.85 & 0.65 \\
+    2 & 0.87 & 0.60 \\
+    3 & 0.88 & 0.58 \\
+    4 & 0.86 & 0.62 \\
+    5 & 0.85 & 0.64 \\
+    \hline
+    Average & 0.86 & 0.63 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+  \centering
+  \caption{Results of the main model for each fold.}
+  \label{tab:folds_results}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Fold & Test Accuracy & Test Loss \\
+    \hline
+    1 & 0.85 & 0.65 \\
+    2 & 0.87 & 0.60 \\
+    3 & 0.88 & 0.58 \\
+    4 & 0.86 & 0.62 \\
+    5 & 0.85 & 0.64 \\
+    \hline
+    Average & 0.86 & 0.63 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+We highlight here how precision and recall are well balanced meaning that the model is not biased towards a specific class.
+\newline
+By looking at the test confusion matrix, we can see that the model is able to classify correctly most of the sounds, with some exceptions.
+One of them is the \textit{wind} class that is misclassified 3 times out of 4: one time classified as
+\textit{train}, one as \textit{airplane} and as \textit{sea waves}. As we can notice, all the three sounds
+are continuous and noisy sounds, so it is not surprising that the model has some difficulties in classifying them.
+This match with what we assumed by looking at Fig.~\ref{fig:Ambiguous_sounds}: sounds with similar spectrograms are
+more difficult to classify. [Articolo ESC che dimostra come anche gli uomini le sabgliano].
+
+Another class that is misclassified is the \textit{coughing} class, which is confused with the 
+\textit{sneezing} and \textit{water drops} class. We underline how all these sounds are intermittent sounds
+and that they have similar spectrograms.
+
+For what it concerns false positive, these are the errors made by the model: the sound of the \textit{airplane} and
+\textit{helicopter} has been classified as \textit{wind}, the sound of \textit{sneezing} and \textit{laughing} as \textit{caughing}
+and for two times the \textit{glass breaking} sound has been misclassified as \textit{can opening}. We can justify
+these results by claiming the same motivation we exposed before: similar spectrograms lead to misclassification.
+
+
+\subsection{Comparison: main model with different inputs}
+\label{sec:comparison_1}
+During the training of the main model, we tried to use different inputs to see how they affect the performance of the model.
+At the end, we notice that all the results are similar, with a slight improvement in the accuracy when using the log mel-spectrogram as input.
+They are reported in Table~\ref{tab:comparison_inputs}.
+\begin{table}[ht]
+  \centering
+  \caption{Performances for different inputs.}
+  \label{tab:comparison_inputs}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Input & Test Accuracy & Test Loss \\
+    \hline
+    log mel-spectrogram & 0.86 & 0.63 \\
+    log STFT & 0.83 & 0.71 \\
+    MFCCs & 0.78 & 0.78 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+We notice how MFCCs are the worst input. This could seems strange thinking that MFFCs are the most processed input we can use among the ones tested.
+MFCCs could be effective with classical machine learning algorithms, where the features were extracted from the raw data and then used to train the model.
+However, with the improvements made by neural networks, is no longer necessary perform classical feature engineering since the networks
+are able to extract better features by themselves. For what we just said, we can undesrtand why even the simple
+STFT works better than MFCCs.
+
+
+\section{Acknowledgments}
 \label{sec:ack}
 
 
@@ -215,7 +351,30 @@ Grazie a tutt coloro che ci hanno supportato e sopportato.
 % Either list references using the bibliography style file IEEEtran.bst
 \bibliographystyle{IEEEtran}
 \bibliography{refs21}
-
+\section{Appendix - Sound classes}
+\label{sec:Appendix}
+\begin{itemize}
+    \item 0: \textit{dog barking}
+    \item 1: \textit{chirping birds}
+    \item 2: \textit{vacuum cleaner}
+    \item 3: \textit{rain falling}
+    \item 4: \textit{sea waves}
+    \item 5: \textit{crackling fire}
+    \item 6: \textit{glass breaking}
+    \item 7: \textit{helicopter flying}
+    \item 8: \textit{chainsaw cutting}
+    \item 9: \textit{engine running}
+    \item 10: \textit{train passing by}
+    \item 11: \textit{car honking}
+    \item 12: \textit{vacuum cleaner running}
+    \item 13: \textit{clock ticking}
+    \item 14: \textit{water drops falling}
+    \item 15: \textit{water drops}
+    \item 16: \textit{}
+    \item 17: \textit{}
+    \item 18: \textit{}
+    \item 44: \textit{sneezing}
+\end{itemize}
 
 \end{sloppy}
 \end{document}

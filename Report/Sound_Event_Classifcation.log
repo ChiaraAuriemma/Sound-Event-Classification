@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.30)  9 JUN 2025 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.30)  9 JUN 2025 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -134,7 +134,14 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box54
-) (./Sound_Event_Classifcation.aux)
+) (./Sound_Event_Classifcation.aux
+
+LaTeX Warning: Label `tab:folds_results' multiply defined.
+
+
+LaTeX Warning: Label `tab:folds_results' multiply defined.
+
+)
 \openout1 = `Sound_Event_Classifcation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -200,6 +207,14 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
 
+Underfull \hbox (badness 1546) in paragraph at lines 102--106
+[]\OT1/ptm/m/n/9 After pro-cess-ing through these branches, the out-puts are
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 110.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
 
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
@@ -209,28 +224,38 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 <Three_types_of_sound.png, id=12, 973.4769pt x 393.8715pt>
 File: Three_types_of_sound.png Graphic file (type png)
 <use Three_types_of_sound.png>
-Package pdftex.def Info: Three_types_of_sound.png  used on input line 120.
+Package pdftex.def Info: Three_types_of_sound.png  used on input line 143.
 (pdftex.def)             Requested size: 241.84842pt x 97.8486pt.
 <Ambiguous_sounds.png, id=14, 973.4769pt x 393.8715pt>
 File: Ambiguous_sounds.png Graphic file (type png)
 <use Ambiguous_sounds.png>
-Package pdftex.def Info: Ambiguous_sounds.png  used on input line 131.
+Package pdftex.def Info: Ambiguous_sounds.png  used on input line 154.
 (pdftex.def)             Requested size: 241.84842pt x 97.8486pt.
+
+
 <dog_barking.png, id=15, 973.4769pt x 393.8715pt>
 File: dog_barking.png Graphic file (type png)
 <use dog_barking.png>
-Package pdftex.def Info: dog_barking.png  used on input line 145.
+Package pdftex.def Info: dog_barking.png  used on input line 168.
 (pdftex.def)             Requested size: 241.84842pt x 97.8486pt.
-
-
 <Harmonic_Percussive_Wind.png, id=16, 1153.4292pt x 505.1673pt>
 File: Harmonic_Percussive_Wind.png Graphic file (type png)
 <use Harmonic_Percussive_Wind.png>
-Package pdftex.def Info: Harmonic_Percussive_Wind.png  used on input line 156.
+Package pdftex.def Info: Harmonic_Percussive_Wind.png  used on input line 179.
 (pdftex.def)             Requested size: 241.84842pt x 105.91867pt.
 
 
-[2 <./Three_types_of_sound.png> <./Ambiguous_sounds.png> <./dog_barking.png> <./Harmonic_Percussive_Wind.png>] (./Sound_Event_Classifcation.bbl
+[2 <./Three_types_of_sound.png> <./Ambiguous_sounds.png> <./dog_barking.png>]
+
+
+LaTeX Warning: Reference `tab:classification_report_fold_3' on page 3 undefined on input line 254.
+
+
+LaTeX Warning: Reference `tab:classification_report_fold_4' on page 3 undefined on input line 254.
+
+
+
+[3 <./Harmonic_Percussive_Wind.png>] (./Sound_Event_Classifcation.bbl
 
 
 Underfull \hbox (badness 1430) in paragraph at lines 42--43
@@ -243,31 +268,44 @@ Underfull \hbox (badness 6032) in paragraph at lines 42--43
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 59--61
+Underfull \hbox (badness 1237) in paragraph at lines 64--66
 \OT1/ptm/m/n/9 able: $https : / / scikit-[]learn . org / stable / modules / generated /
  []
 
 )
 
-[3] (./Sound_Event_Classifcation.aux)
+[4]
+
+
+
+[5
+
+] (./Sound_Event_Classifcation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 3088 strings out of 473190
- 50476 string characters out of 5715800
- 453897 words of memory out of 5000000
- 26282 multiletter control sequences out of 15000+600000
- 578651 words of font info for 74 fonts, out of 8000000 for 9000
+ 3122 strings out of 473190
+ 51118 string characters out of 5715800
+ 460065 words of memory out of 5000000
+ 26312 multiletter control sequences out of 15000+600000
+ 578965 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,11n,67p,552b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 59i,11n,67p,552b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Sound_Event_Classifcation.pdf (3 pages, 1360927 bytes).
+Output written on Sound_Event_Classifcation.pdf (5 pages, 1368957 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

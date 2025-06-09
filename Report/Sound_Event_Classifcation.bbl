@@ -41,6 +41,11 @@ A.~Bansal and N.~K. Garg, ``Environmental sound classification: A descriptive re
 \bibitem{audio_classification_esc50}
 E.~F. Örnek, ``Audio classification using cnn on esc-50 dataset,'' \url{https://github.com/sweat0198/audio_classification_CNN_ESC-50}, 2023, accessed: 2025-06-09.
 
+\bibitem{latifi2025classificationheartsoundsusing}
+\BIBentryALTinterwordspacing
+S.~A. Latifi, H.~Ghassemian, and M.~Imani, ``Classification of heart sounds using multi-branch deep convolutional network and lstm-cnn,'' 2025. [Online]. Available: \url{https://arxiv.org/abs/2407.10689}
+\BIBentrySTDinterwordspacing
+
 \bibitem{piczak2015dataset}
 K.~J. Piczak, ``Esc: Dataset for environmental sound classification,'' in \emph{Proceedings of the 23rd Annual ACM Conference on Multimedia}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2015, pp. 1015--1018.
 
