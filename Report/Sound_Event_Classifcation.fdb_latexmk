@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Sound_Event_Classifcation"] 1749505877.2907 "Sound_Event_Classifcation.aux" "Sound_Event_Classifcation.bbl" "Sound_Event_Classifcation" 1749505987.38993 0
+["bibtex Sound_Event_Classifcation"] 1749505877.2907 "Sound_Event_Classifcation.aux" "Sound_Event_Classifcation.bbl" "Sound_Event_Classifcation" 1749506425.16296 0
   "./IEEEtran.bst" 1611999598 56730 967ffc1c31f2d8f0374b4bda826db6ab ""
   "./refs21.bib" 1749477765.26732 8290 6b88d8a2a3c358ec6f43273e1c7213d2 ""
-  "Sound_Event_Classifcation.aux" 1749505987.14393 7132 8e780e2917b223281482c684844177d2 "pdflatex"
+  "Sound_Event_Classifcation.aux" 1749506424.90759 7132 8e780e2917b223281482c684844177d2 "pdflatex"
   (generated)
   "Sound_Event_Classifcation.bbl"
   "Sound_Event_Classifcation.blg"
   (rewritten before read)
-["pdflatex"] 1749505985.03201 "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" "Sound_Event_Classifcation.pdf" "Sound_Event_Classifcation" 1749505987.39033 0
+["pdflatex"] 1749506422.59396 "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" "Sound_Event_Classifcation.pdf" "Sound_Event_Classifcation" 1749506425.16311 0
   "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" 1749505984.71923 26647 91e30ab5be2011688e8a45dffb94f5d3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -87,17 +87,17 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1748601819 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1748601732 3345725 22865939da3cc8253633bd97f02f996f ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Ambiguous_sounds.png" 1749470699.90576 877343 6b906c571e78729f220894115371afba ""
+  "Ambiguous_sounds.png" 1749506385.02233 894435 a08ac98de74092b8c34903be6b6eb15a ""
   "Confusion_matrix_test.png" 1749333775.58154 121658 dfac7f7130783f10bd608aee8b453d0a ""
   "Confusion_matrix_val.png" 1749333571.90862 125879 a634fde92a824a6cfe82318d553c0df5 ""
   "Entire_architecture.png" 1749501313.23154 894802 378f3ef8f81ee16a0dd93641ec8af226 ""
-  "Harmonic_Percussive_Wind.png" 1749471121.10302 404813 61516a6164fb7690db5a20939ac851d4 ""
+  "Harmonic_Percussive_Wind.png" 1749506422.08886 403553 b2da8f3495b8131009859a837889a437 ""
   "MAECapstoneCourse.sty" 1748610054.47346 15246 5f2bb3e6c9a18e4f9da75e02e84e76e7 ""
-  "Sound_Event_Classifcation.aux" 1749505987.14393 7132 8e780e2917b223281482c684844177d2 "pdflatex"
+  "Sound_Event_Classifcation.aux" 1749506424.90759 7132 8e780e2917b223281482c684844177d2 "pdflatex"
   "Sound_Event_Classifcation.bbl" 1749505877.39293 4588 a721779e54ba27e0b6b746632e80c6f8 "bibtex Sound_Event_Classifcation"
   "Sound_Event_Classifcation.tex" 1749505984.71923 26647 91e30ab5be2011688e8a45dffb94f5d3 ""
-  "Three_types_of_sound.png" 1749470438.55705 523055 616c95597f681a1cdfa08d441eff6e01 ""
-  "dog_barking.png" 1749470822.12824 475510 2a305a16f9cc024e35230b6a2dd9e308 ""
+  "Three_types_of_sound.png" 1749506371.67397 540661 c07217c8c133be108d4eadc4dba034ee ""
+  "dog_barking.png" 1749506396.01286 494523 6ef9a6fd37954ef9700b761150e08cdd ""
   "fold0.png" 1749332986.58776 75931 30530e835ed7497cd263c8bbdd0d236d ""
   "fold1.png" 1749333008.50358 76530 d28b4c22bcdd19931a0c83a9c2b23371 ""
   "fold2.png" 1749333013.75262 76794 aa61e7d56ffcdafa9bda0ed68f554907 ""
