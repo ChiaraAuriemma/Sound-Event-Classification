@@ -97,14 +97,29 @@ input data using specifically calibrated kernel sizes.
 We highlight that our model is working in a peculiar way with the 2D layers since one dimension is, layer-by-layer, alternatively
 imposed equal to 1. With this method, each branch alternates between horizontal and vertical filter orientations,
 enabling efficient extraction of localized patterns across both time and frequency domains.
-After each Conv2D layer, we apply batch normalization and ReLU activationin order to ensure training stability and non-linearity.
+The net is built following a cellular approach. Each cell is composed by a Conv2D layer followed by batch normalization and
+ReLU activationin in order to ensure training stability and non-linearity as its shown in figure~\ref{fig:simple_cell}.
+[After each Conv2D layer, we apply batch normalization and ReLU activationin order to ensure training stability and non-linearity.]
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{simple_cell.png}}
+  \caption{Structure of a cell of the architecture.}
+  \label{fig:simple_cell}
+\end{figure}
 
 After processing through these branches, the outputs are merged via element-wise addition, followed by additional convolutional
 layers with larger filter depths to further abstract the combined feature maps. 
 A global average pooling layer condenses the
 spatial information, and the network concludes with a dense softmax layer that outputs class probabilities over 50 categories.
+The entire architecture is depicted in Figure~\ref{fig:Entire_architecture}.
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{Entire_architecture.png}}
+  \caption{Architecture of the multi-branch convolutional neural network.}
+  \label{fig:Entire_architecture}
+\end{figure}
 
-The model is optimized using the Adam optimizer with AMSGrad, and trained using sparse categorical cross-entropy loss.
+The model is optimized using the Adam optimizer with AMSGrad and learning rate equal to 0.00005, and trained using sparse categorical cross-entropy loss.
 
 The theoretical justification for our filter size selection derives from signal processing
 principles in audio analysis. Smaller filters (1×8) effectively capture localized
@@ -196,13 +211,13 @@ Drawing inspiration by the Salamon and Bello paper \cite{salamon2017deep}, five 
 
 [Ce le mettiamo le immagini?]
 
-For all the results presented in this paper, the training dataset has been preprocessed using the following parameters:
+For all the results presented in this paper, the training dataset has been preprocessed using the following parameters: [Toglere elenco e mettere i valori in tabella o scriverli direttamente] 
 \begin{itemize}
-    \item TS: factor between 0.8 and 1.25 with an activation probability of 1
-    \item PS: factor between -5 and 5 semitones and an activation probability of 1
-    \item BN: SNR between 5 and 40 dB, activation probability of 1
+    \item TS: factor between 0.8 and 1.25
+    \item PS: factor between -5 and 5 semitones
+    \item BN: SNR between 5 and 40 dB
     \item DRC: threshold of -20 dB, ratio of 4:1, attack time of 10 ms, release time of 100 ms
-    \item CIR: activation probability of 1
+    \item CIR: active
 \end{itemize}
 
 
@@ -216,18 +231,53 @@ Furthermore, we ensured that there is no data leakage between training and valid
 training set after the splitting.
 
 The training of the models have been performed on the A100 GPU by Google Colab.
+\newpage
+
 
 
 \section{Results}
 \label{sec:results}
-\subsection{Main model results}
+\subsection{Main model results [abbiamo mai citato altri modelli?]}
 \label{sec:main_model_results}
-[tutte le immagini per ogni fold]
+The results of the training of the model for each fold are reported in Figures~\ref{fig:fold0}, \ref{fig:fold1}, \ref{fig:fold2}, \ref{fig:fold3} and \ref{fig:fold4}.
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{fold0.png}}
+  \caption{Result of the training for the first fold.}
+  \label{fig:fold0}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{fold1.png}}
+  \caption{Result of the training for the second fold.}
+  \label{fig:fold1}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{fold2.png}}
+  \caption{Result of the training for the third fold.}
+  \label{fig:fold2}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{fold3.png}}
+  \caption{Result of the training for the fourth fold.}
+  \label{fig:fold3}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{fold4.png}}
+  \caption{Result of the training for the fifth fold.}
+  \label{fig:fold4}
+\end{figure}
+
 The average test accuracy over the 5 folds reached by the model is 86\% with an average loss of 0.63.
 The performnce for each fold is reported in Table~\ref{tab:folds_results}.
 
-[Tabella]
-
 \begin{table}[ht]
   \centering
   \caption{Results of the main model for each fold.}
@@ -247,46 +297,156 @@ The performnce for each fold is reported in Table~\ref{tab:folds_results}.
   \end{tabular}
 \end{table}
 
-In [Figura] the confusion matrix of the model with the best accuracy (88\%) is reported. The
+In Fig~\ref{fig:confusion_matrix_val} and Fig~\ref{fig:confusion_matrix_test} the
+validation and the test confusion matrixes of the model with the best accuracy (88\%) are reported. The
 labeling of the classes is reported in the appendix.
 
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{Confusion_matrix_val.png}}
+  \caption{Confusion Matrix of the validation set.}
+  \label{fig:confusion_matrix_val}
+\end{figure}
 
-And the reoprts in the tables~\ref{tab:classification_report_fold_3} and ~\ref{tab:classification_report_fold_4}.
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{Confusion_matrix_test.png}}
+  \caption{Confusion Matrix of the test set.}
+  \label{fig:confusion_matrix_test}
+\end{figure}
+
+
+The reoprts are reported in Table~\ref{tab:validation_report}
+for the validation and in Table~\ref{tab:test_report} for the test.
 \begin{table}[ht]
   \centering
-  \caption{Results of the main model for each fold.}
-  \label{tab:folds_results}
-  \begin{tabular}{|c|c|c|}
-    \hline
-    Fold & Test Accuracy & Test Loss \\
-    \hline
-    1 & 0.85 & 0.65 \\
-    2 & 0.87 & 0.60 \\
-    3 & 0.88 & 0.58 \\
-    4 & 0.86 & 0.62 \\
-    5 & 0.85 & 0.64 \\
-    \hline
-    Average & 0.86 & 0.63 \\
-    \hline
+  \caption{Classification report on the validation set related to the model with best test accuracy (fold 4).}
+  \label{tab:validation_report}
+\begin{tabular}{|c|c|c|c|c|}
+  \hline
+  Class & Precision & Recall & f1-score & Support \\
+  \hline
+  0  & 1.00 & 1.00 & 1.00 & 7 \\
+  1  & 1.00 & 0.71 & 0.83 & 7 \\
+  2  & 0.70 & 1.00 & 0.82 & 7 \\
+  3  & 1.00 & 1.00 & 1.00 & 7 \\
+  4  & 0.70 & 1.00 & 0.82 & 7 \\
+  5  & 0.80 & 1.00 & 0.89 & 8 \\
+  6  & 1.00 & 1.00 & 1.00 & 7 \\
+  7  & 0.75 & 0.86 & 0.80 & 7 \\
+  8  & 1.00 & 0.86 & 0.92 & 7 \\
+  9  & 1.00 & 1.00 & 1.00 & 7 \\
+  10 & 0.64 & 1.00 & 0.78 & 7 \\
+  11 & 0.86 & 0.86 & 0.86 & 7 \\
+  12 & 0.86 & 0.86 & 0.86 & 7 \\
+  13 & 1.00 & 0.86 & 0.92 & 7 \\
+  14 & 1.00 & 1.00 & 1.00 & 7 \\
+  15 & 0.50 & 0.71 & 0.59 & 7 \\
+  16 & 1.00 & 0.86 & 0.92 & 7 \\
+  17 & 1.00 & 0.88 & 0.93 & 8 \\
+  18 & 0.86 & 0.86 & 0.86 & 7 \\
+  19 & 0.60 & 0.43 & 0.50 & 7 \\
+  20 & 0.83 & 0.71 & 0.77 & 7 \\
+  21 & 1.00 & 0.88 & 0.93 & 8 \\
+  22 & 0.86 & 0.86 & 0.86 & 7 \\
+  23 & 1.00 & 0.86 & 0.92 & 7 \\
+  24 & 0.75 & 0.86 & 0.80 & 7 \\
+  25 & 0.89 & 1.00 & 0.94 & 8 \\
+  26 & 0.80 & 0.57 & 0.67 & 7 \\
+  27 & 1.00 & 0.43 & 0.60 & 7 \\
+  28 & 0.83 & 0.62 & 0.71 & 8 \\
+  29 & 0.75 & 0.86 & 0.80 & 7 \\
+  30 & 1.00 & 0.71 & 0.83 & 7 \\
+  31 & 1.00 & 0.86 & 0.92 & 7 \\
+  32 & 1.00 & 0.86 & 0.92 & 7 \\
+  33 & 0.88 & 1.00 & 0.93 & 7 \\
+  34 & 0.89 & 1.00 & 0.94 & 8 \\
+  35 & 1.00 & 1.00 & 1.00 & 7 \\
+  36 & 0.70 & 0.88 & 0.78 & 8 \\
+  37 & 1.00 & 0.86 & 0.92 & 7 \\
+  38 & 1.00 & 0.86 & 0.92 & 7 \\
+  39 & 1.00 & 0.71 & 0.83 & 7 \\
+  40 & 1.00 & 0.86 & 0.92 & 7 \\
+  41 & 0.62 & 0.71 & 0.67 & 7 \\
+  42 & 1.00 & 1.00 & 1.00 & 7 \\
+  43 & 0.89 & 1.00 & 0.94 & 8 \\
+  44 & 1.00 & 1.00 & 1.00 & 7 \\
+  45 & 0.60 & 0.86 & 0.71 & 7 \\
+  46 & 1.00 & 0.86 & 0.92 & 7 \\
+  47 & 0.78 & 1.00 & 0.88 & 7 \\
+  48 & 0.83 & 0.62 & 0.71 & 8 \\
+  49 & 0.89 & 1.00 & 0.94 & 8 \\
+  \hline
+  Accuracy &  &  & 0.86 & 360 \\
+  Marco avg & 0.88 & 0.86 & 0.86 & 360 \\
+  Weighted avg & 0.88 & 0.86 & 0.86 & 360 \\
+  \hline
   \end{tabular}
 \end{table}
 
 \begin{table}[ht]
   \centering
-  \caption{Results of the main model for each fold.}
-  \label{tab:folds_results}
-  \begin{tabular}{|c|c|c|}
-    \hline
-    Fold & Test Accuracy & Test Loss \\
-    \hline
-    1 & 0.85 & 0.65 \\
-    2 & 0.87 & 0.60 \\
-    3 & 0.88 & 0.58 \\
-    4 & 0.86 & 0.62 \\
-    5 & 0.85 & 0.64 \\
-    \hline
-    Average & 0.86 & 0.63 \\
-    \hline
+  \caption{Classification report on the test set related to the model with best test accuracy (fold 4).}
+  \label{tab:test_report}
+  \begin{tabular}{|c|c|c|c|c|}
+  \hline
+  Class & Precision & Recall & f1-score & Support \\
+  \hline
+  0  & 1.00 & 1.00 & 1.00 & 4 \\
+  1  & 1.00 & 1.00 & 1.00 & 4 \\
+  2  & 1.00 & 1.00 & 1.00 & 4 \\
+  3  & 1.00 & 1.00 & 1.00 & 4 \\
+  4  & 0.80 & 1.00 & 0.89 & 4 \\
+  5  & 0.67 & 1.00 & 0.80 & 4 \\
+  6  & 1.00 & 1.00 & 1.00 & 4 \\
+  7  & 1.00 & 1.00 & 1.00 & 4 \\
+  8  & 1.00 & 1.00 & 1.00 & 4 \\
+  9  & 0.80 & 1.00 & 0.89 & 4 \\
+  10 & 0.75 & 0.75 & 0.75 & 4 \\
+  11 & 0.80 & 1.00 & 0.89 & 4 \\
+  12 & 1.00 & 1.00 & 1.00 & 4 \\
+  13 & 0.80 & 1.00 & 0.89 & 4 \\
+  14 & 1.00 & 0.75 & 0.86 & 4 \\
+  15 & 0.67 & 1.00 & 0.80 & 4 \\
+  16 & 1.00 & 1.00 & 1.00 & 4 \\
+  17 & 1.00 & 1.00 & 1.00 & 4 \\
+  18 & 1.00 & 0.75 & 0.86 & 4 \\
+  19 & 0.33 & 0.25 & 0.29 & 4 \\
+  20 & 0.80 & 1.00 & 0.89 & 4 \\
+  21 & 1.00 & 1.00 & 1.00 & 4 \\
+  22 & 1.00 & 1.00 & 1.00 & 4 \\
+  23 & 1.00 & 1.00 & 1.00 & 4 \\
+  24 & 0.80 & 1.00 & 0.89 & 4 \\
+  25 & 1.00 & 0.75 & 0.86 & 4 \\
+  26 & 1.00 & 0.75 & 0.86 & 4 \\
+  27 & 1.00 & 0.75 & 0.86 & 4 \\
+  28 & 0.75 & 0.75 & 0.75 & 4 \\
+  29 & 0.80 & 1.00 & 0.89 & 4 \\
+  30 & 0.75 & 0.75 & 0.75 & 4 \\
+  31 & 1.00 & 0.75 & 0.86 & 4 \\
+  32 & 0.75 & 0.75 & 0.75 & 4 \\
+  33 & 1.00 & 1.00 & 1.00 & 4 \\
+  34 & 0.80 & 1.00 & 0.89 & 4 \\
+  35 & 1.00 & 1.00 & 1.00 & 4 \\
+  36 & 0.50 & 0.50 & 0.50 & 4 \\
+  37 & 1.00 & 0.50 & 0.67 & 4 \\
+  38 & 1.00 & 1.00 & 1.00 & 4 \\
+  39 & 1.00 & 0.50 & 0.67 & 4 \\
+  40 & 1.00 & 1.00 & 1.00 & 4 \\
+  41 & 1.00 & 0.75 & 0.86 & 4 \\
+  42 & 1.00 & 1.00 & 1.00 & 4 \\
+  43 & 0.75 & 0.75 & 0.75 & 4 \\
+  44 & 1.00 & 1.00 & 1.00 & 4 \\
+  45 & 0.60 & 0.75 & 0.67 & 4 \\
+  46 & 1.00 & 1.00 & 1.00 & 4 \\
+  47 & 1.00 & 0.75 & 0.86 & 4 \\
+  48 & 0.75 & 0.75 & 0.75 & 4 \\
+  49 & 1.00 & 1.00 & 1.00 & 4 \\
+  \hline
+  Accuracy & & & 0.88 & 200 \\
+  Macro avg & 0.89 & 0.88 & 0.88 & 200 \\
+  Weighted avg & 0.89 & 0.88 & 0.88 & 200 \\
+  \hline
   \end{tabular}
 \end{table}
 
@@ -354,26 +514,56 @@ Grazie a tutt coloro che ci hanno supportato e sopportato.
 \section{Appendix - Sound classes}
 \label{sec:Appendix}
 \begin{itemize}
-    \item 0: \textit{dog barking}
-    \item 1: \textit{chirping birds}
-    \item 2: \textit{vacuum cleaner}
-    \item 3: \textit{rain falling}
-    \item 4: \textit{sea waves}
-    \item 5: \textit{crackling fire}
-    \item 6: \textit{glass breaking}
-    \item 7: \textit{helicopter flying}
-    \item 8: \textit{chainsaw cutting}
-    \item 9: \textit{engine running}
-    \item 10: \textit{train passing by}
-    \item 11: \textit{car honking}
-    \item 12: \textit{vacuum cleaner running}
-    \item 13: \textit{clock ticking}
-    \item 14: \textit{water drops falling}
-    \item 15: \textit{water drops}
-    \item 16: \textit{}
-    \item 17: \textit{}
-    \item 18: \textit{}
-    \item 44: \textit{sneezing}
+  \item 0: dog
+  \item 1: chirping birds
+  \item 2: vacuum cleaner
+  \item 3: thunderstorm
+  \item 4: door wood knock
+  \item 5: can opening
+  \item 6: crow
+  \item 7: clapping
+  \item 8: fireworks
+  \item 9: chainsaw
+  \item 10: airplane
+  \item 11: mouse click
+  \item 12: pouring water
+  \item 13: train
+  \item 14: sheep
+  \item 15: water drops
+  \item 16: church bells
+  \item 17: clock alarm
+  \item 18: keyboard typing
+  \item 19: wind
+  \item 20: footsteps
+  \item 21: frog
+  \item 22: cow
+  \item 23: brushing teeth
+  \item 24: car horn
+  \item 25: crackling fire
+  \item 26: helicopter
+  \item 27: drinking sipping
+  \item 28: rain
+  \item 29: insects
+  \item 30: laughing
+  \item 31: hen
+  \item 32: engine
+  \item 33: breathing
+  \item 34: crying baby
+  \item 35: hand saw
+  \item 36: coughing
+  \item 37: glass breaking
+  \item 38: snoring
+  \item 39: toilet flush
+  \item 40: pig
+  \item 41: washing machine
+  \item 42: clock tick
+  \item 43: sneezing
+  \item 44: rooster
+  \item 45: sea waves
+  \item 46: siren
+  \item 47: cat
+  \item 48: door wood creaks
+  \item 49: crickets
 \end{itemize}
 
 \end{sloppy}
