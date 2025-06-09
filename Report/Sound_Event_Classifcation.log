@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.30)  7 JUN 2025 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.30)  9 JUN 2025 14:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -206,39 +206,68 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 
 ]
-<fig1a.pdf, id=12, 307.1475pt x 171.64125pt>
-File: fig1a.pdf Graphic file (type pdf)
-<use fig1a.pdf>
-Package pdftex.def Info: fig1a.pdf  used on input line 146.
-(pdftex.def)             Requested size: 241.84842pt x 135.15247pt.
- (./Sound_Event_Classifcation.bbl
+<Three_types_of_sound.png, id=12, 973.4769pt x 393.8715pt>
+File: Three_types_of_sound.png Graphic file (type png)
+<use Three_types_of_sound.png>
+Package pdftex.def Info: Three_types_of_sound.png  used on input line 120.
+(pdftex.def)             Requested size: 241.84842pt x 97.8486pt.
+<Ambiguous_sounds.png, id=14, 973.4769pt x 393.8715pt>
+File: Ambiguous_sounds.png Graphic file (type png)
+<use Ambiguous_sounds.png>
+Package pdftex.def Info: Ambiguous_sounds.png  used on input line 131.
+(pdftex.def)             Requested size: 241.84842pt x 97.8486pt.
+<dog_barking.png, id=15, 973.4769pt x 393.8715pt>
+File: dog_barking.png Graphic file (type png)
+<use dog_barking.png>
+Package pdftex.def Info: dog_barking.png  used on input line 145.
+(pdftex.def)             Requested size: 241.84842pt x 97.8486pt.
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 46--48
-[]\OT1/ptm/m/n/9 S. learn de-vel-op-ers, ``Strat-i-fied-k-fold | scikit-
+<Harmonic_Percussive_Wind.png, id=16, 1153.4292pt x 505.1673pt>
+File: Harmonic_Percussive_Wind.png Graphic file (type png)
+<use Harmonic_Percussive_Wind.png>
+Package pdftex.def Info: Harmonic_Percussive_Wind.png  used on input line 156.
+(pdftex.def)             Requested size: 241.84842pt x 105.91867pt.
+
+
+[2 <./Three_types_of_sound.png> <./Ambiguous_sounds.png> <./dog_barking.png> <./Harmonic_Percussive_Wind.png>] (./Sound_Event_Classifcation.bbl
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 42--43
+[]\OT1/ptm/m/n/9 E. F. []Ornek, ``Au-dio clas-si-fi-ca-tion us-ing cnn on esc-50
+ []
+
+
+Underfull \hbox (badness 6032) in paragraph at lines 42--43
+\OT1/ptm/m/n/9 dataset,'' $https : / / github . com / sweat0198 / audio[]classi^^Lcation[]
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 59--61
+\OT1/ptm/m/n/9 able: $https : / / scikit-[]learn . org / stable / modules / generated /
  []
 
 )
 
-[2 <./fig1a.pdf>] (./Sound_Event_Classifcation.aux)
+[3] (./Sound_Event_Classifcation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3058 strings out of 473190
- 49553 string characters out of 5715800
- 453699 words of memory out of 5000000
- 26251 multiletter control sequences out of 15000+600000
- 579729 words of font info for 75 fonts, out of 8000000 for 9000
+ 3088 strings out of 473190
+ 50476 string characters out of 5715800
+ 453897 words of memory out of 5000000
+ 26282 multiletter control sequences out of 15000+600000
+ 578651 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,11n,67p,558b,457s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Sound_Event_Classifcation.pdf (2 pages, 124840 bytes).
+ 59i,11n,67p,552b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Sound_Event_Classifcation.pdf (3 pages, 1360927 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
