@@ -38,8 +38,21 @@ S.~Padmaja and N.~Sharmila~Banu, ``A systematic literature review on sound event
 A.~Bansal and N.~K. Garg, ``Environmental sound classification: A descriptive review of the literature,'' \emph{Intelligent Systems with Applications}, vol.~16, p. 200115, 2022. [Online]. Available: \url{https://www.sciencedirect.com/science/article/pii/S2667305322000539}
 \BIBentrySTDinterwordspacing
 
+\bibitem{electronics11152279}
+\BIBentryALTinterwordspacing
+A.~Ashurov, Y.~Zhou, L.~Shi, Y.~Zhao, and H.~Liu, ``Environmental sound classification based on transfer-learning techniques with multiple optimizers,'' \emph{Electronics}, vol.~11, no.~15, 2022. [Online]. Available: \url{https://www.mdpi.com/2079-9292/11/15/2279}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Piczak2015environmental}
 K.~J. Piczak, ``Environmental sound classification with convolutional neural networks,'' in \emph{2015 IEEE 25th International Workshop on Machine Learning for Signal Processing (MLSP)}, 2015, pp. 1--6.
+
+\bibitem{zhang2019attentionbasedconvolutionalrecurrent}
+\BIBentryALTinterwordspacing
+Z.~Zhang, S.~Xu, T.~Qiao, S.~Zhang, and S.~Cao, ``Attention based convolutional recurrent neural network for environmental sound classification,'' 2019. [Online]. Available: \url{https://arxiv.org/abs/1907.02230}
+\BIBentrySTDinterwordspacing
+
+\bibitem{crnn_audio_classification}
+K.~S. Cabeza, ``Pytorch audio classification: Urban sounds,'' \url{https://github.com/ksanjeevan/crnn-audio-classification}, 2019, accessed: 2025-06-10.
 
 \bibitem{audio_classification_esc50}
 E.~F. Örnek, ``Audio classification using cnn on esc-50 dataset,'' \url{https://github.com/sweat0198/audio_classification_CNN_ESC-50}, 2023, accessed: 2025-06-09.
@@ -55,11 +68,6 @@ K.~J. Piczak, ``Esc: Dataset for environmental sound classification,'' in \emph{
 \bibitem{fonseca2020fsd50k}
 \BIBentryALTinterwordspacing
 E.~Fonseca, X.~Favory, J.~Pons, F.~Font, and X.~Serra, ``Fsd50k: An open dataset of human-labeled sound events,'' \emph{arXiv preprint arXiv:2010.00475}, 2020, accessed: 2025-06-09. [Online]. Available: \url{https://arxiv.org/abs/2010.00475}
-\BIBentrySTDinterwordspacing
-
-\bibitem{zhang2019attentionbasedconvolutionalrecurrent}
-\BIBentryALTinterwordspacing
-Z.~Zhang, S.~Xu, T.~Qiao, S.~Zhang, and S.~Cao, ``Attention based convolutional recurrent neural network for environmental sound classification,'' 2019. [Online]. Available: \url{https://arxiv.org/abs/1907.02230}
 \BIBentrySTDinterwordspacing
 
 \bibitem{scikit-learn_stratifiedkfold}

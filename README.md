@@ -13,13 +13,13 @@
 ## Checklist
 
 ### Macrotasks
-1.  Lettura papers entro venerdì 23 Maggio 2025 ✅
-2.  Pronti partenza via lunedì 26 Maggio 2025 14:30 - 18:30 - Implementazione caricamento e preparazione dataset ✅
-3.  Checkino todos juntos 31 Maggio 2025 9:00 - 12:00 ✅
-4.  Checkino todos juntos 4 Junio 2025 14:00 - 19:00 ✅
-5.  Checkino todos juntos 5 Junio 2025 9:00 - 10:00 ✅
-6.  Checkino todos juntos 6 Junio 2025 17:00 - 19:00 ✅
-7.  Checkino todos juntos 7 Junio 2025 9:00 - 12:00 ✅
+1. [x]  Lettura papers entro venerdì 23 Maggio 2025 ✅
+2. [x] Pronti partenza via lunedì 26 Maggio 2025 14:30 - 18:30 - Implementazione caricamento e preparazione dataset ✅
+3. [x] Checkino todos juntos 31 Maggio 2025 9:00 - 12:00 ✅
+4. [x] Checkino todos juntos 4 Junio 2025 14:00 - 19:00 ✅
+5. [x] Checkino todos juntos 5 Junio 2025 9:00 - 10:00 ✅
+6. [x] Checkino todos juntos 6 Junio 2025 17:00 - 19:00 ✅
+7. [x] Checkino todos juntos 7 Junio 2025 9:00 - 12:00 ✅
 8.  Checkino todos juntos 9 Junio 2025 10:30 - 13:00 
 
 ### Microtasks Da Completare

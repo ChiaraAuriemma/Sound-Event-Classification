@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.30)  10 JUN 2025 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.30)  10 JUN 2025 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -200,150 +200,154 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-[]$\OT1/pcr/m/n/9 https : / / github . com / ChiaraAuriemma /
- []
-
-<simple_cell.png, id=1, 540.0175pt x 344.28625pt>
-File: simple_cell.png Graphic file (type png)
-<use simple_cell.png>
-Package pdftex.def Info: simple_cell.png  used on input line 117.
-(pdftex.def)             Requested size: 241.84842pt x 154.18665pt.
-<Entire_architecture.png, id=3, 971.63pt x 832.10875pt>
-File: Entire_architecture.png Graphic file (type png)
-<use Entire_architecture.png>
-Package pdftex.def Info: Entire_architecture.png  used on input line 129.
-(pdftex.def)             Requested size: 241.84842pt x 207.11249pt.
-
-Underfull \hbox (badness 1546) in paragraph at lines 122--133
-[]\OT1/ptm/m/n/9 After pro-cess-ing through these branches, the out-puts are
- []
-
-
 
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 137.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+[]$\OT1/pcr/m/n/9 https : / / github . com / ChiaraAuriemma /
+ []
+
+<simple_cell.png, id=11, 540.0175pt x 344.28625pt>
+File: simple_cell.png Graphic file (type png)
+<use simple_cell.png>
+Package pdftex.def Info: simple_cell.png  used on input line 146.
+(pdftex.def)             Requested size: 241.84842pt x 154.18665pt.
+<Entire_architecture.png, id=13, 971.63pt x 832.10875pt>
+File: Entire_architecture.png Graphic file (type png)
+<use Entire_architecture.png>
+Package pdftex.def Info: Entire_architecture.png  used on input line 158.
+(pdftex.def)             Requested size: 241.84842pt x 207.11249pt.
+
+Underfull \hbox (badness 1546) in paragraph at lines 151--162
+[]\OT1/ptm/m/n/9 After pro-cess-ing through these branches, the out-puts are
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 166.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-<balanced_dataset.png, id=15, 946.0143pt x 477.7047pt>
+
+
+[2 <./simple_cell.png> <./Entire_architecture.png>]
+<balanced_dataset.png, id=20, 946.0143pt x 477.7047pt>
 File: balanced_dataset.png Graphic file (type png)
 <use balanced_dataset.png>
-Package pdftex.def Info: balanced_dataset.png  used on input line 162.
+Package pdftex.def Info: balanced_dataset.png  used on input line 191.
 (pdftex.def)             Requested size: 241.84842pt x 122.12286pt.
-<Three_types_of_sound.png, id=16, 983.5947pt x 426.393pt>
+<Three_types_of_sound.png, id=21, 983.5947pt x 426.393pt>
 File: Three_types_of_sound.png Graphic file (type png)
 <use Three_types_of_sound.png>
-Package pdftex.def Info: Three_types_of_sound.png  used on input line 177.
+Package pdftex.def Info: Three_types_of_sound.png  used on input line 206.
 (pdftex.def)             Requested size: 241.84842pt x 104.8413pt.
-<Ambiguous_sounds.png, id=17, 983.5947pt x 426.393pt>
+<Ambiguous_sounds.png, id=22, 983.5947pt x 426.393pt>
 File: Ambiguous_sounds.png Graphic file (type png)
 <use Ambiguous_sounds.png>
-Package pdftex.def Info: Ambiguous_sounds.png  used on input line 188.
+Package pdftex.def Info: Ambiguous_sounds.png  used on input line 217.
 (pdftex.def)             Requested size: 241.84842pt x 104.8413pt.
 
 
-[2 <./simple_cell.png> <./Entire_architecture.png> <./balanced_dataset.png>]
-<dog_barking.png, id=24, 983.5947pt x 426.393pt>
+<dog_barking.png, id=23, 983.5947pt x 426.393pt>
 File: dog_barking.png Graphic file (type png)
 <use dog_barking.png>
-Package pdftex.def Info: dog_barking.png  used on input line 202.
+Package pdftex.def Info: dog_barking.png  used on input line 231.
 (pdftex.def)             Requested size: 241.84842pt x 104.8413pt.
-<Harmonic_Percussive_Wind.png, id=25, 1157.7654pt x 513.8397pt>
+<Harmonic_Percussive_Wind.png, id=24, 1157.7654pt x 513.8397pt>
 File: Harmonic_Percussive_Wind.png Graphic file (type png)
 <use Harmonic_Percussive_Wind.png>
-Package pdftex.def Info: Harmonic_Percussive_Wind.png  used on input line 213.
+Package pdftex.def Info: Harmonic_Percussive_Wind.png  used on input line 242.
 (pdftex.def)             Requested size: 241.84842pt x 107.33716pt.
 
 
-
-
-[3 <./Three_types_of_sound.png> <./Ambiguous_sounds.png> <./dog_barking.png> <./Harmonic_Percussive_Wind.png>]
-<fold0.png, id=33, 990.8217pt x 413.3844pt>
+[3 <./balanced_dataset.png> <./Three_types_of_sound.png> <./Ambiguous_sounds.png> <./dog_barking.png>]
+<fold0.png, id=32, 990.8217pt x 413.3844pt>
 File: fold0.png Graphic file (type png)
 <use fold0.png>
-Package pdftex.def Info: fold0.png  used on input line 261.
+Package pdftex.def Info: fold0.png  used on input line 290.
 (pdftex.def)             Requested size: 241.84842pt x 100.89844pt.
-<fold1.png, id=34, 990.8217pt x 413.3844pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+<fold1.png, id=33, 990.8217pt x 413.3844pt>
 File: fold1.png Graphic file (type png)
 <use fold1.png>
-Package pdftex.def Info: fold1.png  used on input line 268.
+Package pdftex.def Info: fold1.png  used on input line 297.
 (pdftex.def)             Requested size: 241.84842pt x 100.89844pt.
-<fold2.png, id=35, 990.8217pt x 413.3844pt>
+<fold2.png, id=34, 990.8217pt x 413.3844pt>
 File: fold2.png Graphic file (type png)
 <use fold2.png>
-Package pdftex.def Info: fold2.png  used on input line 275.
+Package pdftex.def Info: fold2.png  used on input line 304.
 (pdftex.def)             Requested size: 241.84842pt x 100.89844pt.
-<fold3.png, id=36, 990.8217pt x 413.3844pt>
+<fold3.png, id=35, 990.8217pt x 413.3844pt>
 File: fold3.png Graphic file (type png)
 <use fold3.png>
-Package pdftex.def Info: fold3.png  used on input line 282.
+Package pdftex.def Info: fold3.png  used on input line 311.
 (pdftex.def)             Requested size: 241.84842pt x 100.89844pt.
-<fold4.png, id=37, 990.8217pt x 413.3844pt>
+<fold4.png, id=36, 990.8217pt x 413.3844pt>
 File: fold4.png Graphic file (type png)
 <use fold4.png>
-Package pdftex.def Info: fold4.png  used on input line 289.
+Package pdftex.def Info: fold4.png  used on input line 318.
 (pdftex.def)             Requested size: 241.84842pt x 100.89844pt.
-
-
-<Confusion_matrix_val.png, id=38, 987.2082pt x 1076.1003pt>
+<Confusion_matrix_val.png, id=37, 987.2082pt x 1076.1003pt>
 File: Confusion_matrix_val.png Graphic file (type png)
 <use Confusion_matrix_val.png>
-Package pdftex.def Info: Confusion_matrix_val.png  used on input line 324.
+Package pdftex.def Info: Confusion_matrix_val.png  used on input line 353.
 (pdftex.def)             Requested size: 241.84842pt x 263.62225pt.
-<Confusion_matrix_test.png, id=39, 995.8806pt x 1076.1003pt>
+<Confusion_matrix_test.png, id=38, 995.8806pt x 1076.1003pt>
 File: Confusion_matrix_test.png Graphic file (type png)
 <use Confusion_matrix_test.png>
-Package pdftex.def Info: Confusion_matrix_test.png  used on input line 331.
+Package pdftex.def Info: Confusion_matrix_test.png  used on input line 360.
 (pdftex.def)             Requested size: 241.84842pt x 261.32346pt.
 
 
-[4 <./fold0.png> <./fold1.png> <./fold2.png> <./fold3.png> <./fold4.png>]
+[4 <./Harmonic_Percussive_Wind.png> <./fold0.png> <./fold1.png> <./fold2.png>]
 
-<6_2D_CNN_layer_model_confusion_matrix_val.png, id=48, 987.2082pt x 1076.1003pt>
+<6_2D_CNN_layer_model_confusion_matrix_val.png, id=46, 987.2082pt x 1076.1003pt>
 File: 6_2D_CNN_layer_model_confusion_matrix_val.png Graphic file (type png)
 <use 6_2D_CNN_layer_model_confusion_matrix_val.png>
-Package pdftex.def Info: 6_2D_CNN_layer_model_confusion_matrix_val.png  used on input line 510.
+Package pdftex.def Info: 6_2D_CNN_layer_model_confusion_matrix_val.png  used on input line 539.
 (pdftex.def)             Requested size: 241.84842pt x 263.62225pt.
-<6_2D_CNN_layer_model_confusion_matrix_test.png, id=49, 995.8806pt x 1076.1003pt>
+<6_2D_CNN_layer_model_confusion_matrix_test.png, id=47, 995.8806pt x 1076.1003pt>
 File: 6_2D_CNN_layer_model_confusion_matrix_test.png Graphic file (type png)
 <use 6_2D_CNN_layer_model_confusion_matrix_test.png>
-Package pdftex.def Info: 6_2D_CNN_layer_model_confusion_matrix_test.png  used on input line 517.
+Package pdftex.def Info: 6_2D_CNN_layer_model_confusion_matrix_test.png  used on input line 546.
 (pdftex.def)             Requested size: 241.84842pt x 261.32346pt.
-(./Sound_Event_Classifcation.bbl
-Underfull \vbox (badness 1371) has occurred while \output is active []
+
+
+[5 <./fold3.png> <./fold4.png> <./Confusion_matrix_val.png>] (./Sound_Event_Classifcation.bbl
 
 
 
-[5 <./Confusion_matrix_val.png> <./Confusion_matrix_test.png>]
+[6 <./Confusion_matrix_test.png> <./6_2D_CNN_layer_model_confusion_matrix_val.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+\OT1/ptm/m/n/9 https : / / github . com / ksanjeevan / crnn-[]audio-[]classi^^Lcation$,
+ []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 45--46
+Underfull \hbox (badness 1430) in paragraph at lines 58--59
 []\OT1/ptm/m/n/9 E. F. []Ornek, ``Au-dio clas-si-fi-ca-tion us-ing cnn on esc-50
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 45--46
+Underfull \hbox (badness 6032) in paragraph at lines 58--59
 \OT1/ptm/m/n/9 dataset,'' $https : / / github . com / sweat0198 / audio[]classi^^Lcation[]
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 67--69
+Underfull \hbox (badness 1237) in paragraph at lines 75--77
 \OT1/ptm/m/n/9 able: $https : / / scikit-[]learn . org / stable / modules / generated /
  []
 
 
 
-[6 <./6_2D_CNN_layer_model_confusion_matrix_val.png> <./6_2D_CNN_layer_model_confusion_matrix_test.png>])
+)
 
-
-
-[7]
+[7 <./6_2D_CNN_layer_model_confusion_matrix_test.png>]
 
 
 
@@ -351,24 +355,22 @@ Underfull \hbox (badness 1237) in paragraph at lines 67--69
 
 
 
-[9
-
-] (./Sound_Event_Classifcation.aux)
+[9] (./Sound_Event_Classifcation.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3222 strings out of 473190
- 53717 string characters out of 5715800
- 517493 words of memory out of 5000000
- 26411 multiletter control sequences out of 15000+600000
+ 3227 strings out of 473190
+ 53806 string characters out of 5715800
+ 500854 words of memory out of 5000000
+ 26416 multiletter control sequences out of 15000+600000
  579480 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,67p,552b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 59i,11n,67p,552b,478s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Sound_Event_Classifcation.pdf (9 pages, 2665882 bytes).
+Output written on Sound_Event_Classifcation.pdf (9 pages, 2668247 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream

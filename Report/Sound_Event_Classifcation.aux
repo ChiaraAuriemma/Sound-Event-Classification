@@ -4,26 +4,34 @@
 \citation{kumar2016weaklysupervisedscalableaudio}
 \citation{ReviewSoundEvent2025}
 \citation{DescriptiveESC2022}
+\citation{electronics11152279}
+\citation{ReviewSoundEvent2025}
 \citation{Piczak2015environmental}
+\citation{zhang2019attentionbasedconvolutionalrecurrent}
+\citation{crnn_audio_classification}
 \citation{audio_classification_esc50}
 \citation{latifi2025classificationheartsoundsusing}
 \@writefile{toc}{\contentsline {section}{\numberline {1} Introduction}{1}{}\protected@file@percent }
 \newlabel{sec:intro}{{1}{1}{}{section.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1} Background}{1}{}\protected@file@percent }
 \newlabel{sec:background}{{1.1}{1}{}{subsection.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2} Literature review for project development}{1}{}\protected@file@percent }
-\newlabel{sec:literature_review_project_development}{{1.2}{1}{}{subsection.1.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2} Methodology}{1}{}\protected@file@percent }
-\newlabel{sec:methodology}{{2}{1}{}{section.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1} Feature extraction}{1}{}\protected@file@percent }
-\newlabel{sec:feature_extraction}{{2.1}{1}{}{subsection.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2} Model description}{1}{}\protected@file@percent }
-\newlabel{sec:model_description}{{2.2}{1}{}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2} State-of-the-art}{1}{}\protected@file@percent }
+\newlabel{sec:state_of_the_art}{{1.2}{1}{}{subsection.1.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.1} Piczack model}{1}{}\protected@file@percent }
+\newlabel{sec:piczack_model}{{1.2.1}{1}{}{subsubsection.1.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.2} Attention based model}{1}{}\protected@file@percent }
+\newlabel{sec:attention_based_model}{{1.2.2}{1}{}{subsubsection.1.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3} CRNN model}{1}{}\protected@file@percent }
+\newlabel{sec:CRNN_model}{{1.2.3}{1}{}{subsubsection.1.2.3}{}}
 \citation{piczak2015dataset}
 \citation{fonseca2020fsd50k}
 \citation{piczak2015dataset}
-\citation{zhang2019attentionbasedconvolutionalrecurrent}
-\citation{piczak2015dataset}
+\@writefile{toc}{\contentsline {section}{\numberline {2} Methodology}{2}{}\protected@file@percent }
+\newlabel{sec:methodology}{{2}{2}{}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1} Feature extraction}{2}{}\protected@file@percent }
+\newlabel{sec:feature_extraction}{{2.1}{2}{}{subsection.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2} Model description}{2}{}\protected@file@percent }
+\newlabel{sec:model_description}{{2.2}{2}{}{subsection.2.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Structure of a cell of the architecture.}}{2}{}\protected@file@percent }
 \newlabel{fig:simple_cell}{{1}{2}{}{figure.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Architecture of the multi-branch convolutional neural network.}}{2}{}\protected@file@percent }
@@ -32,22 +40,24 @@
 \newlabel{sec:evaluation}{{3}{2}{}{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1} Dataset analysis and preprocessing}{2}{}\protected@file@percent }
 \newlabel{sec:format}{{3.1}{2}{}{subsection.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Graphical demontration of the balance of the dataset used.}}{2}{}\protected@file@percent }
-\newlabel{fig:balanced_dataset}{{3}{2}{}{figure.3}{}}
+\citation{zhang2019attentionbasedconvolutionalrecurrent}
+\citation{piczak2015dataset}
 \citation{scikit-learn_stratifiedkfold}
 \citation{salamon2017deep}
-\citation{traer2016statistics}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Graphical demontration of the balance of the dataset used.}}{3}{}\protected@file@percent }
+\newlabel{fig:balanced_dataset}{{3}{3}{}{figure.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Power spectrogram of a transient, a continous and an intermittent sound.}}{3}{}\protected@file@percent }
 \newlabel{fig:power_spectrograms_3_sounds}{{4}{3}{}{figure.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Power spectrogram of the sound produced by a washing machine, an helicopter and an engine.}}{3}{}\protected@file@percent }
 \newlabel{fig:Ambiguous_sounds}{{5}{3}{}{figure.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Power spectrogram of three different sounds belonging to the same \textit  {dog barking} class.}}{3}{}\protected@file@percent }
 \newlabel{fig:Dog_barking}{{6}{3}{}{figure.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Harmonic and percussive decomposition of the wind blowing sound.}}{3}{}\protected@file@percent }
-\newlabel{fig:Harmonic_Percussive_Wind}{{7}{3}{}{figure.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2} Evaluation metrics}{3}{}\protected@file@percent }
-\newlabel{sec:metrics}{{3.2}{3}{}{subsection.3.2}{}}
+\citation{traer2016statistics}
 \citation{piczak2015dataset}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Harmonic and percussive decomposition of the wind blowing sound.}}{4}{}\protected@file@percent }
+\newlabel{fig:Harmonic_Percussive_Wind}{{7}{4}{}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2} Evaluation metrics}{4}{}\protected@file@percent }
+\newlabel{sec:metrics}{{3.2}{4}{}{subsection.3.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4} Results}{4}{}\protected@file@percent }
 \newlabel{sec:results}{{4}{4}{}{section.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1} Main model results}{4}{}\protected@file@percent }
@@ -58,49 +68,51 @@
 \newlabel{fig:fold1}{{9}{4}{}{figure.9}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Result of the training for the second fold.}}{4}{}\protected@file@percent }
 \newlabel{fig:fold2}{{10}{4}{}{figure.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Result of the training for the third fold.}}{4}{}\protected@file@percent }
-\newlabel{fig:fold3}{{11}{4}{}{figure.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Result of the training for the fourth fold.}}{4}{}\protected@file@percent }
-\newlabel{fig:fold4}{{12}{4}{}{figure.12}{}}
-\bibstyle{IEEEtran}
-\bibdata{refs21}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Result of the training for the third fold.}}{5}{}\protected@file@percent }
+\newlabel{fig:fold3}{{11}{5}{}{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Result of the training for the fourth fold.}}{5}{}\protected@file@percent }
+\newlabel{fig:fold4}{{12}{5}{}{figure.12}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Results of the main model for each fold.}}{5}{}\protected@file@percent }
 \newlabel{tab:folds_results}{{1}{5}{}{table.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Confusion Matrix of the validation set for our final model.}}{5}{}\protected@file@percent }
 \newlabel{fig:confusion_matrix_val}{{13}{5}{}{figure.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Confusion Matrix of the test set for our final model.}}{5}{}\protected@file@percent }
-\newlabel{fig:confusion_matrix_test}{{14}{5}{}{figure.14}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2} Comparison: main model with different inputs}{5}{}\protected@file@percent }
 \newlabel{sec:comparison_1}{{4.2}{5}{}{subsection.4.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3} Comparison: main model with the baseline}{5}{}\protected@file@percent }
-\newlabel{sec:comparison_2}{{4.3}{5}{}{subsection.4.3}{}}
+\bibstyle{IEEEtran}
+\bibdata{refs21}
 \bibcite{birdsCNN2017}{1}
 \bibcite{emotionRecognition2021}{2}
 \bibcite{kumar2016weaklysupervisedscalableaudio}{3}
 \bibcite{ReviewSoundEvent2025}{4}
 \bibcite{DescriptiveESC2022}{5}
-\bibcite{Piczak2015environmental}{6}
-\bibcite{audio_classification_esc50}{7}
-\bibcite{latifi2025classificationheartsoundsusing}{8}
-\bibcite{piczak2015dataset}{9}
-\bibcite{fonseca2020fsd50k}{10}
-\bibcite{zhang2019attentionbasedconvolutionalrecurrent}{11}
-\bibcite{scikit-learn_stratifiedkfold}{12}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Confusion Matrix of the validation set for the 6 2D-CNN-layer model.}}{6}{}\protected@file@percent }
-\newlabel{fig:6_2D_CNN_layer_model_confusion_matrix_val}{{15}{6}{}{figure.15}{}}
+\bibcite{electronics11152279}{6}
+\bibcite{Piczak2015environmental}{7}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Confusion Matrix of the test set for our final model.}}{6}{}\protected@file@percent }
+\newlabel{fig:confusion_matrix_test}{{14}{6}{}{figure.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3} Comparison: main model with the baseline}{6}{}\protected@file@percent }
+\newlabel{sec:comparison_2}{{4.3}{6}{}{subsection.4.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5} Acknowledgments}{6}{}\protected@file@percent }
 \newlabel{sec:ack}{{5}{6}{}{section.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Confusion Matrix of the validation set for the 6 2D-CNN-layer model.}}{6}{}\protected@file@percent }
+\newlabel{fig:6_2D_CNN_layer_model_confusion_matrix_val}{{15}{6}{}{figure.15}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6} References}{6}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Confusion Matrix of the test set for the 6 2D-CNN-layer model.}}{6}{}\protected@file@percent }
-\newlabel{fig:6_2D_CNN_layer_model_confusion_matrix_test}{{16}{6}{}{figure.16}{}}
-\bibcite{salamon2017deep}{13}
-\bibcite{traer2016statistics}{14}
+\bibcite{zhang2019attentionbasedconvolutionalrecurrent}{8}
+\bibcite{crnn_audio_classification}{9}
+\bibcite{audio_classification_esc50}{10}
+\bibcite{latifi2025classificationheartsoundsusing}{11}
+\bibcite{piczak2015dataset}{12}
+\bibcite{fonseca2020fsd50k}{13}
+\bibcite{scikit-learn_stratifiedkfold}{14}
+\bibcite{salamon2017deep}{15}
+\bibcite{traer2016statistics}{16}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Confusion Matrix of the test set for the 6 2D-CNN-layer model.}}{7}{}\protected@file@percent }
+\newlabel{fig:6_2D_CNN_layer_model_confusion_matrix_test}{{16}{7}{}{figure.16}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {7} Appendix - Sound classes}{7}{}\protected@file@percent }
 \newlabel{sec:Appendix}{{7}{7}{}{section.7}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Classification report on the validation set related to the model with best test accuracy (fold 4).}}{8}{}\protected@file@percent }
 \newlabel{tab:validation_report}{{2}{8}{}{table.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Classification report on the test set related to the model with best test accuracy (fold 4).}}{8}{}\protected@file@percent }
-\newlabel{tab:test_report}{{3}{8}{}{table.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Classification report on the test set related to the model with best test accuracy (fold 4).}}{9}{}\protected@file@percent }
+\newlabel{tab:test_report}{{3}{9}{}{table.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Performances for different inputs.}}{9}{}\protected@file@percent }
 \newlabel{tab:comparison_inputs}{{4}{9}{}{table.4}{}}
 \gdef \@abspage@last{9}

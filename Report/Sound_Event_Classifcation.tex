@@ -68,13 +68,42 @@ The choice of algorithm depends on the complexity of the task and the available 
 
 Evaluation of the SEC system is typically done using standard metrics such as accuracy, precision, recall, and F1-score.
 
-\subsection{Literature review for project development}
-\label{sec:literature_review_project_development}
-One of the first attempts in SEC was made by Piczak \cite{Piczak2015environmental} in 2015, in which the sound is split in several segments
-and each segment is processed individually using a Convolutional Neural Network (CNN). At the end a series of Dense Layer is used to classify the segments.
-Final predictions for a sound are generated using either a majority-voting scheme or by taking into account the
-probabilities predicted for each segment.
+\subsection{State-of-the-art}
+\label{sec:state_of_the_art}
+As happened in most of the research fileds, the advent of neural networks in the context of sound event classification have significantly improved the task.
+Traditional approaches, which typically involved feature engineering and classical machine learning algorithms, such as Support Vector Machines (SVM),
+k-Nearest Neighbors (kNN), and Multi-Layer Perceptrons (MLP), have been surpassed by
+modern deep learning architectures such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs). 
+These architectures have demonstrated superior performance in capturing the intricate and complex patterns present in audio signals.
+Aside that,  techniques like log-Mel spectrogram extraction and data augmentation have helped improve model
+generalization. Furthermore, emerging hybrid
+models that integrate CNNs with attention mechanisms or transformer-based architectures have shown promise in enhancing the modeling of temporal
+and spatial features in sound data. Recent advancements also include transfer learning approaches using pre-trained
+CNN architectures. These methods not only enhance accuracy but also address challenges related to training time
+and feature extraction quality \cite{electronics11152279, ReviewSoundEvent2025}.
+We list now some interesting models we used as reference for our project.
 
+
+\subsubsection{Piczack model}
+\label{sec:piczack_model}
+One of the first attempts in using 2DCNN for SEC was made by Piczak \cite{Piczak2015environmental} in 2015, in which the log mel-spectrogram is split in several segments
+and each segment is processed individually using a Convolutional Neural Network (CNN). At the end, a series of Dense Layer is used to classify the segments.
+Final predictions for a sound are generated using either a majority-voting scheme or by taking into account the
+probabilities predicted for each segment. Piczak's model is notable for its simplicity and effectiveness, serving as a baseline for many subsequent SEC models.
+
+\subsubsection{Attention based model}
+\label{sec:attention_based_model}
+In 2020, Zhang et al. \cite{zhang2019attentionbasedconvolutionalrecurrent} proposed an attention-based convolutional recurrent neural network (ACRNN) for SEC.
+The model combines convolutional layers for feature extraction with recurrent layers to capture temporal dependencies in the audio signal.
+The attention mechanism allows the model to focus on specific parts of the audio signal that are more relevant for classification, improving performance on complex sound events.
+A remarkable point of this paper is the kind of input used: instead of having classical log mel-spectrograms, the authors used a gammatone spectrogram that leads
+to better results in terms of classification accuracy.
+
+\subsubsection{CRNN model}
+\label{sec:CRNN_model}
+The last reference model we used to develop our architecture is the Convolutional Recurrent Neural Network (CRNN) proposed by Kiran Sanjeevan Cabeza \cite{crnn_audio_classification}.
+There, a hymbrid model is implemented: fistrly three 2D convolutional layers are used to extract features from the log mel-spectrogram, then two recurrent layers are used to capture temporal dependencies.
+Finally, a softmax layer is used to classify the sound events.
 
 
 \section{Methodology}
@@ -342,7 +371,7 @@ for the validation and in Table~\ref{tab:test_report} for the test.
   \label{tab:validation_report}
 \begin{tabular}{|c|c|c|c|c|}
   \hline
-  Class & Precision & Recall & f1-score & Support \\
+  Class & Precision & Recall & F1-score & Support \\
   \hline
   0  & 1.00 & 1.00 & 1.00 & 7 \\
   1  & 1.00 & 0.71 & 0.83 & 7 \\
@@ -408,7 +437,7 @@ for the validation and in Table~\ref{tab:test_report} for the test.
   \label{tab:test_report}
   \begin{tabular}{|c|c|c|c|c|}
   \hline
-  Class & Precision & Recall & f1-score & Support \\
+  Class & Precision & Recall & F1-score & Support \\
   \hline
   0  & 1.00 & 1.00 & 1.00 & 4 \\
   1  & 1.00 & 1.00 & 1.00 & 4 \\
