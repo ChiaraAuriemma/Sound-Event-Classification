@@ -59,15 +59,22 @@ due to its wide range of applications, including environmental monitoring \cite{
 and multimedia content analysis \cite{kumar2016weaklysupervisedscalableaudio}.
 The goal of SEC is to accurately classify sound events in real-time or from pre-recorded audio data.
 The process of SEC typically involves several steps, including feature extraction, model training, and evaluation \cite{ReviewSoundEvent2025}.
+
 Commonly used features include Mel-frequency cepstral coefficients (MFCCs), log-spectrograms, and log-mel spectrograms.
 Model training involves using labeled audio data to train a machine learning model to classify sound events.
 Various machine learning algorithms can be used for SEC, including support vector machines (SVMs), decision trees, and deep
 learning models such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs) \cite{DescriptiveESC2022}.
 The choice of algorithm depends on the complexity of the task and the available data.
+
 Evaluation of the SEC system is typically done using standard metrics such as accuracy, precision, recall, and F1-score.
 
-\subsection{State of the art}
-\label{sec:state_of_the_art}
+\subsection{Literature review for project development}
+\label{sec:literature_review_project_development}
+One of the first attempts in SEC was made by Piczak \cite{Piczak2015environmental} in 2015, in which the sound is split in several segments
+and each segment is processed individually using a Convolutional Neural Network (CNN). At the end a series of Dense Layer is used to classify the segments.
+Final predictions for a sound are generated using either a majority-voting scheme or by taking into account the
+probabilities predicted for each segment.
+
 
 
 \section{Methodology}
@@ -509,6 +516,8 @@ However, with the improvements made by neural networks, is no longer necessary p
 are able to extract better features by themselves. For what we just said, we can undesrtand why even the simple
 STFT works better than MFCCs.
 
+\subsection{Comparison: main model with }
+\label{sec:comparison_2}
 
 \section{Acknowledgments}
 \label{sec:ack}
