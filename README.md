@@ -50,7 +50,7 @@ The log Mel-spectrogram is successfully used in classification. This is the feat
 The model proposed is a multi-branch convolutional
 neural network (MBCNN) architecture that processes the
 log mel-spectrogram of the audio signal whose structure is reported below.
-<img src="Report/Compact_version.png" width="700">
+<img src="Deliveries/Compact_version.png" width="700">
 
 
 ## 5. Jupyter Notebook
