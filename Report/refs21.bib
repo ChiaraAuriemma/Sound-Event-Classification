@@ -172,3 +172,52 @@ abstract = {Automatic environmental sound classification (ESC) is one of the upc
   abstract = {The last decade has seen increased interest in environmental sound classification (ESC) due to the increased complexity and rich information of ambient sounds. The state-of-the-art methods for ESC are based on transfer learning paradigms that often utilize learned representations from common image-classification problems. This paper aims to determine the effectiveness of employing pre-trained convolutional neural networks (CNNs) for audio categorization and the feasibility of retraining. This study investigated various hyper-parameters and optimizers, such as optimal learning rate, epochs, and Adam, Adamax, and RMSprop optimizers for several pre-trained models, such as Inception, and VGG, ResNet, etc. Firstly, the raw sound signals were transferred into an image format (log-Mel spectrogram). Then, the selected pre-trained models were applied to the obtained spectrogram data. In addition, the effect of essential retraining factors on classification accuracy and processing time was investigated during CNN training. Various optimizers (such as Adam, Adamax, and RMSprop) and hyperparameters were utilized for evaluating the proposed method on the publicly accessible sound dataset UrbanSound8K. The proposed method achieves 97.25% and 95.5% accuracy on the provided dataset using the pre-trained DenseNet201 and the ResNet50V2 CNN models, respectively.},
   doi = {10.3390/electronics11152279}
 }
+
+@article{transfer_learning_esc2020,
+  author       = {Gao Huang and
+                  Zhuang Liu and
+                  Kilian Q. Weinberger},
+  title        = {Densely Connected Convolutional Networks},
+  journal      = {CoRR},
+  volume       = {abs/1608.06993},
+  year         = {2016},
+  url          = {http://arxiv.org/abs/1608.06993},
+  eprinttype    = {arXiv},
+  eprint       = {1608.06993},
+  timestamp    = {Tue, 20 Aug 2024 16:54:06 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/HuangLW16a.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@INPROCEEDINGS{end_to_end,
+  author={Sang, Jonghee and Park, Soomyung and Lee, Junwoo},
+  booktitle={2018 26th European Signal Processing Conference (EUSIPCO)}, 
+  title={Convolutional Recurrent Neural Networks for Urban Sound Classification Using Raw Waveforms}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={2444-2448},
+  keywords={Convolution;Feature extraction;Recurrent neural networks;Computer architecture;Task analysis;Training},
+  doi={10.23919/EUSIPCO.2018.8553247}
+}
+
+@misc{google,
+      title={Going Deeper with Convolutions}, 
+      author={Christian Szegedy and Wei Liu and Yangqing Jia and Pierre Sermanet and Scott Reed and Dragomir Anguelov and Dumitru Erhan and Vincent Vanhoucke and Andrew Rabinovich},
+      year={2014},
+      eprint={1409.4842},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/1409.4842}, 
+}
+
+@inproceedings{google_transfer,
+  title={Classifying environmental sounds using image recognition networks},
+  author={Boddapati, Venkatesh and Petef, Andrej and Rasmusson, Jim and Lundberg, Lars},
+  booktitle={2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={356--360},
+  year={2017},
+  organization={IEEE},
+  doi={10.1109/ICASSP.2017.7952192}
+}
+

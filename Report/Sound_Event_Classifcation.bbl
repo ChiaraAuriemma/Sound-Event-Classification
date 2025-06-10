@@ -54,6 +54,22 @@ Z.~Zhang, S.~Xu, T.~Qiao, S.~Zhang, and S.~Cao, ``Attention based convolutional 
 \bibitem{crnn_audio_classification}
 K.~S. Cabeza, ``Pytorch audio classification: Urban sounds,'' \url{https://github.com/ksanjeevan/crnn-audio-classification}, 2019, accessed: 2025-06-10.
 
+\bibitem{end_to_end}
+J.~Sang, S.~Park, and J.~Lee, ``Convolutional recurrent neural networks for urban sound classification using raw waveforms,'' in \emph{2018 26th European Signal Processing Conference (EUSIPCO)}, 2018, pp. 2444--2448.
+
+\bibitem{google}
+\BIBentryALTinterwordspacing
+C.~Szegedy, W.~Liu, Y.~Jia, P.~Sermanet, S.~Reed, D.~Anguelov, D.~Erhan, V.~Vanhoucke, and A.~Rabinovich, ``Going deeper with convolutions,'' 2014. [Online]. Available: \url{https://arxiv.org/abs/1409.4842}
+\BIBentrySTDinterwordspacing
+
+\bibitem{google_transfer}
+V.~Boddapati, A.~Petef, J.~Rasmusson, and L.~Lundberg, ``Classifying environmental sounds using image recognition networks,'' in \emph{2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2017, pp. 356--360.
+
+\bibitem{transfer_learning_esc2020}
+\BIBentryALTinterwordspacing
+G.~Huang, Z.~Liu, and K.~Q. Weinberger, ``Densely connected convolutional networks,'' \emph{CoRR}, vol. abs/1608.06993, 2016. [Online]. Available: \url{http://arxiv.org/abs/1608.06993}
+\BIBentrySTDinterwordspacing
+
 \bibitem{audio_classification_esc50}
 E.~F. Örnek, ``Audio classification using cnn on esc-50 dataset,'' \url{https://github.com/sweat0198/audio_classification_CNN_ESC-50}, 2023, accessed: 2025-06-09.
 

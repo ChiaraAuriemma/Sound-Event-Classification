@@ -101,9 +101,31 @@ to better results in terms of classification accuracy.
 
 \subsubsection{CRNN model}
 \label{sec:CRNN_model}
-The last reference model we used to develop our architecture is the Convolutional Recurrent Neural Network (CRNN) proposed by Kiran Sanjeevan Cabeza \cite{crnn_audio_classification}.
-There, a hymbrid model is implemented: fistrly three 2D convolutional layers are used to extract features from the log mel-spectrogram, then two recurrent layers are used to capture temporal dependencies.
+Another reference model we used as reference to develop our architecture is the Convolutional Recurrent Neural Network (CRNN) proposed by Kiran Sanjeevan Cabeza \cite{crnn_audio_classification}.
+There, a hybrid model is implemented: fistrly three 2D convolutional layers are used to extract features from the log mel-spectrogram, then two recurrent layers are used to capture temporal dependencies.
 Finally, a softmax layer is used to classify the sound events.
+
+\subsubsection{End-to-end model}
+\label{sec:endtoend_model}
+An interesting approach we found in literature is the one adopted for the model written by Sang et. al. \cite{end_to_end}. There,
+both feature extraction and classification are performed by the neural network, taking as input directly the raw data.
+An advantage of a model like this one is surely the one of not necessary needing deep knowledge reguardind the task, since
+everything is made by the model itself.
+
+\subsubsection{GoogLeNet model}
+\label{sec:GoogLeNet_model}
+The key innovation of GoogLeNet \cite{google} is the Inception module, which allows the network to capture features at multiple scales
+simultaneously by combining convolutions of different sizes within the same layer. This design significantly reduces the
+number of parameters compared to traditional deep networks, making it more efficient without sacrificing performance.
+In the article by Boddapati et al. \cite{google_transfer}, is shown how the GoogLeNet architecture can be adapted to audio classification tasks using transfer learning.
+
+\subsubsection{DenseNet201 model}
+\label{sec:DenseNet201_model}
+DenseNet201 \cite{transfer_learning_esc2020} is 201 layers newtork that finds the right trade-off between the learning of very
+complex features and efficiency. It has been shown to achieve excellent performance on image classification
+benchmarks, such as ImageNet, by enhancing information propagation and reducing overfitting. The article considered
+as a reference for the implementation of this model for audio is the one by Ashurov \cite{electronics11152279}
+in which several models, among them DenseNet201, are applied to audio tasks according to the transfer learning technique.
 
 
 \section{Methodology}
@@ -553,11 +575,12 @@ sounds belognin to the \textit{thunderstorm} sound class, the \textit{train} sou
 \label{sec:comparison_1}
 During the training of the main model, we tried to use different inputs to see how they affect the performance of the model.
 At the end, we notice that all the results are similar, with a slight improvement in the accuracy when using the log mel-spectrogram as input.
-They are reported in Table~\ref{tab:comparison_inputs}.
+They are reported in Table~\ref{tab:comparison_inputs1}.
+
 \begin{table}[ht]
   \centering
   \caption{Performances for different inputs.}
-  \label{tab:comparison_inputs}
+  \label{tab:comparison_inputs1}
   \begin{tabular}{|c|c|c|}
     \hline
     Input & Test Accuracy & Test Loss \\
@@ -575,13 +598,50 @@ However, with the improvements made by neural networks, is no longer necessary p
 are able to extract better features by themselves. For what we just said, we can undesrtand why even the simple
 STFT works better than MFCCs.
 
-\subsection{Comparison: main model with the baseline}
+\subsection{Comparison: main model with others}
 \label{sec:comparison_2}
+We report here some results of the comparison between our model and other models: in in Table~\ref{tab:comparison_inputs2} comparisons between
+different models implemented by us are reported, while in Table~\ref{tab:comparison_inputs3} comparisons with other models from the literature are reported.
+
 The baseline model is a simple 2D Convolutional Neural Network (CNN) with three convolutional layers, one max pooling layer and one dense layer.
+\begin{table}[ht]
+  \centering
+  \caption{Performances of different models implemented by us.}
+  \label{tab:comparison_inputs2}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Model & Dataset & Test Accuracy & Test Loss \\
+    \hline
+    Armani & 0.86 & 0.86 & 0.63 \\
+    Prada & 0.83  & 0.86 & 0.71 \\
+    Gucci & 0.78  & 0.86 & 0.78 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+  \centering
+  \caption{Performances of different models of the literature.}
+  \label{tab:comparison_inputs3}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Model & Dataset & Test Accuracy \\
+    \hline
+    Piczak \cite{Piczak2015environmental} & ESC-50 & 64.5\% \\
+    Piczak \cite{Piczak2015environmental} & UrbanSound8K  & 73.1\% \\
+    Attention Based \cite{zhang2019attentionbasedconvolutionalrecurrent} & ESC-50  & 86.1\% \\
+    CRNN \cite{crnn_audio_classification} & UrbanSound8K & 73.5\% \\
+    End-to-end \cite{end_to_end} & UrbanSound8K  & 79\% \\
+    GoogLeNet \cite{google_transfer} & ESC-50  & 73\% \\
+    GoogLeNet \cite{google_transfer} & UrbanSound8K  & 93\% \\
+    DenseNet201 \cite{electronics11152279} & UrbanSound8K  & 97.25\% \\
+    \hline
+  \end{tabular}
+\end{table}
+
+
 \section{Acknowledgments}
 \label{sec:ack}
-
-
 This work was supported by the Politecnico di Milano,
 within the framework of the Selected Topics in Music and Acoustic Engineering Course 2025.
 A special thanks goes to the course instructor, Prof. JULIO JOSÉ CARABIAS ORTI, for being
