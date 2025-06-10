@@ -94,6 +94,11 @@ S.~learn developers, ``Stratifiedkfold — scikit-learn 1.5.2 documentation,'' 2
 \bibitem{salamon2017deep}
 J.~Salamon and J.~P. Bello, ``Deep convolutional neural networks and data augmentation for environmental sound classification,'' \emph{IEEE Signal Processing Letters}, vol.~24, no.~3, pp. 279--283, 2017.
 
+\bibitem{pedalboard}
+\BIBentryALTinterwordspacing
+P.~Sobot and Spotify, ``Pedalboard: A python library for real-time audio effects,'' July 2023. [Online]. Available: \url{https://github.com/spotify/pedalboard}
+\BIBentrySTDinterwordspacing
+
 \bibitem{traer2016statistics}
 \BIBentryALTinterwordspacing
 J.~Traer and J.~H. McDermott, ``Statistics of natural reverberation enable perceptual separation of sound and space,'' \emph{Proceedings of the National Academy of Sciences}, vol. 113, no.~48, pp. E7856--E7865, 2016. [Online]. Available: \url{https://www.pnas.org/doi/10.1073/pnas.1612524113}

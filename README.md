@@ -1,4 +1,4 @@
-# Sound-Event-Classification
+# Sound Event Classification
 
 ## Group:
 
@@ -10,78 +10,108 @@
 
 - ####  Filippo Marri &nbsp;([@filippomarri](https://github.com/filippomarri))<br> 10110508 &nbsp;&nbsp; filippo.marri@mail.polimi.it
 
-## Checklist
+## 1. Problem Definition
 
-### Macrotasks
-1. [x]  Lettura papers entro venerdì 23 Maggio 2025 ✅
-2. [x] Pronti partenza via lunedì 26 Maggio 2025 14:30 - 18:30 - Implementazione caricamento e preparazione dataset ✅
-3. [x] Checkino todos juntos 31 Maggio 2025 9:00 - 12:00 ✅
-4. [x] Checkino todos juntos 4 Junio 2025 14:00 - 19:00 ✅
-5. [x] Checkino todos juntos 5 Junio 2025 9:00 - 10:00 ✅
-6. [x] Checkino todos juntos 6 Junio 2025 17:00 - 19:00 ✅
-7. [x] Checkino todos juntos 7 Junio 2025 9:00 - 12:00 ✅
-8.  Checkino todos juntos 9 Junio 2025 10:30 - 13:00 
+This repository contains a Jupyter Notebook developed for an university project on sound event classification.
+Aim of the project is the one to develop, train and analyse a model able to classify sound events given as input.
 
-### Microtasks Da Completare
-Cose da fare:
-- ⁠Scrivere la parte del paper relativa alla pipeline creata
-- ⁠⁠Raccogliere tutte  le informazioni disponibili dai paper letti e dai tentativi fatti per scrivere una parte del paper dove facciamo vari confronti con altre architetture (stato dell’arte ma anche le nostre prove )
-- Sistemare il github
-- Sistemare markdown notebook
+  Therefore, we will select a data set that provides labels based on the sound source like a subset of the [ESC50](https://github.com/karoldvl/ESC-50#esc-50-dataset-for-environmental-sound-classification).  We select the following sounds from 2 main soundscapes with 5 well defined sound sources for each:
 
-### Microtasks Completate
-- Lavorare su data augmentation: implementare funzioni per diverse tecniche e spiegare come e perché (Felipe y Francisca) 💣 
-- Aggiungere cross-validation (i risultati dell'operazione son in X_train_fold, X_val_fold, y_train_fold, y_val_fold da uasare per il training e per la validation al posto delle rispettive variabili senza _fold). Per poter implementare la valutazione, serve il modello 🔝
-- Lavorare su CRNN (Clarita y Añita) 🪩
-- Invertire posizione di pre-processing (Felipe y Francisca) 💣 
-Modelli:
-    - Modello CNN - Primo modello da Chiarina: Añita (tempi biblici) ❌
-    - Modello CRNN 2: troppo lento ❌
-    - Modello CRNN 3: Pre-processing troppo lento ❌
-- convertire il modello in pytorch e capire se runna in locale in un tempo umano ❌
-- Capire se abbandonare definitivamente tensorflow ❌
-- sistemare il notebook con il modello per avere la versione definitiva con tutta la pipeline da allegare al paper ✅
-- runnare il notebook definitivo con la cross validation (da qui in poi non lo tocchiamo più) ✅
-- Provare diversi tipi di input (quelli proposti da José nel lab 1) , così magari abbiamo nel paper una nostra tabellina con i confronti con varie prove ✅
+*  natural soundscapes:  rain, sea waves, wind, crickets, birds,
+*  urban soundscapes: car horn, train, siren, engine, church bells.
+
+From the reference material, the human accuracy on the selected classes is about 75.3%.
+
+### Jupyter environment
+
+Tensorflow 1.8.0 is used for the machine learning part.  Additionally, following libraries were also installed for some specific audio-processing tasks:
+
+* [librosa 0.6.1](https://librosa.github.io/librosa/)
+* [PySoundFile 0.9.0](http://pysoundfile.readthedocs.io/en/0.9.0/)
 
 
-## Papers
+## 2 Audio data selection, segmentation, and augmentationn
 
-**Analisi Dataset:**
-- *ESC Dataset for Environmental Sound Classification* - proposto da Filippo (l'articolo spiega com'è fatto il dataset che useremo e perché questo dataset è valido per ciò che useremo. Inoltre compara le performance umane di riconoscimento dei suoni a quelle del loro algoritmo, per quanto semplice, di SEC)
+[link](a_audio_data_preprocessing.ipynb)
 
-**Data Augmentation e Pre-propcessing:**
-- *Deep Learning-based Environmental Sound Classification Using Feature Fusion and Data Enhancement* - proposto da Francesca (usa il nostro dataset e da data augmentation)
-- *Deep Convolutional Neural Networks and Data Augmentation for Environmental Sound Classification* - proposto da Filippo (punto interessante in cui spiega che fare data augmentation su alcune classi ne peggiora le prestazioni di classificazione)
-- *A Software framework for musical data augmentation* - proposto da Filippo (software usato per audio data augmentation ma il paper è dell'1 quando non c'era nessuno)
+Some useful information are already provided by the data set, i.e. each file is in mono format, has a duration of 5s, sampling rate of 44,100Hz, and in a 16 bit format.  This part generates 400 audio samples, 40 per class.  To increase the sample size and to improve the training process, [Piczak (2015)](http://karol.piczak.com/papers/Piczak2015-ESC-ConvNet.pdf) recommends some manipulation on the raw audio data as a pre-processing step.  We will adjust his recommendations:
 
-**Baseline scelta (CRNN):**
-- *Sound Event Detection: A tutorial* (è possibile prendere spunto per la costruzione di una baseline)
-- Attention_based_convolutional_recurrent_neural_network_for_environmental_sound_classification (fa una proposta piú avanzata che potremmo usare per migliorare la baseline)
-- Convolutional Recurrent Neural Networks for Urban Sound Classification using Raw Waveforms 
+* cut the files in short sequences, here we will make 1s duration for each file with 50% overlap,
+* down-sample the files to 32,000Hz.  It is quite important to increase the default down-sampling value from 22,050Hz because some sounds, like crickets and birds, have characteristically high-frequency traits above 10kHz.  With this adjustment, the highest coded frequency matches the human hearing limit of 16 kHz,
+* remove the files without any signal or with too low variations,
+* for each odd sub-sample number, add random noise to create data augmentation ([Salamon & Bello, 2016](https://arxiv.org/abs/1608.04363)).
 
-**Altre architetture:**
-- *Sound Events Recognition and Classification Using Machine Learning Techniques* - fra (molto sintetico, utilizza il nostro dataset)
-- *SOUND CLASSIFICATION SYSTEM USING MACHINE LEARNING TECHNIQUES* - proposto da Francesca (ha una tabella dei pro e contro che mi sembra ben fatta, ossia per ogni specifico task suggerisce quale tecnica utilizzare)
-- *Formula-Supervised Sound Event Detection: Pre-Training Without Real Data* - prop da fra (non c'entra ma mi ha interessata ed è 2025)
-- *ENVIRONMENTAL SOUND CLASSIFICATION WITH CONVOLUTIONAL NEURAL NETWORKS* (baseline di una CNN)
-- Convolutional Neural Network based Audio Event Classification (proposta una CNN, interessante perché vengono confrontate piú versioni)
+A single original file will therefore generate 9 new audio files for the learning tasks as shown in the figure below:
 
-**Spiegoni teorici generali sul machine learning:**
-- *An overview of machine learning classification techniques* - proposto da Francesca (può tornarci utile quando scriveremo il report per argomentare come mai abbiamo scelto un metodo piuttosto che un altro)
-- *A Survey of Audio Classification Using Deep Learning* - proposto da Francesca (spiega i vantaggi di varie tecniche con riferimento all'audio classification)
+<img src="images/data_preparation.png" width="500">
 
-**Review letteratura:**
-- A Systematic Literature Review on Sound Event Detection and Classification (vengono confrontate piú soluzioni, utile per la ricerca di altri paper)
-- *Automatic Recognition of Urban Enviromental Sound Events* - proposto da Filippo (datato, di interessante c'è che può tornare utile trattare il silenzio delle tracce audio come noise eliminandolo)
-- Environmental Sound Classification: A descriptive review of the literature
+[](https://github.com/LesimpleC/Sound-Event-Classification-with-Data-Augmentation-and-CNN/issues/1#issue-789173922) 
 
-**Da leggere:**
-- *Audio Classification Method Based on Machine Learning* - proposto da Anna
-- *Sound Classification Using Convolutional Neural Network and Tensor Deep Stacking Network* - proposto da Anna
+From the 400 selected original files, we should get 3,600 new files. After the segmentation and selection , we get a new audio database of 3,552 items in `test_audio` and `train_audio` directory, i.e. 48 sub-samples are considered as empty (non informative) and removed.
 
 
-## Branches
+## 3 Features extraction
+
+The raw wave file is a temporal variation of the amplitude. However, we hear also the pitch, the harmonic contempt (frequency) and their variations. The representation of a sound in three dimensions (time, frequency, amplitude) can be treated like an image. Each pixel is defined by the time frame and frequency bin and the intensity of the pixel is defined by the power computed in each defined surface.  The power spectrogram is the first transformation from time to time/frequency domain.  The Mel-frequency cepstral coefficients are successfully used in classification and the idea is to come closer to the human perception characteristics. 
+
+
+### 3.1 Mel-Frequency Cepstral Coefficients
+
+A psycho-acoustical model, the Mel-Frequency Cepstral Coefficients (MFCC), gives an alternative to reduce the amount of information that a full spectrogram would produce and better follow human perception characteristics. [Wikipedia](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum): _"the mel-frequency cepstrum (MFC) is a representation of the short-term power spectrum of a sound, based on a linear cosine transform of a log power spectrum on a nonlinear mel scale of frequency."_
+
+
+### 3.2 MFCC parameters
+
+We can try classification with different MFCCs dimensions.  We can then evaluate the influence of time/frequency resolution on the accuracy of the classifier.  Note that the findings only apply to the current problem.  Intra-class variation, e.g. different birds or different cars, might need more information with a better time or frequency resolution.
+
+We can try a different models:
+
+* __Model 1 high resolution:__ with a hop length of 512 samples. This gives 63 frames in a 1s sample. To keep a square like picture we will need therefore 63 coefficients from the MFC transformation. Each sample has a size of 63 by 63.
+
+* __Model 2 low resolution:__ with a hop length of 1024 samples. This gives 32 frames in a 1s sample. To keep a square like picture we will need therefore 32 coefficients from the MFC transformation. Each sample has a size of 32 by 32.
+
+* __Model 3 low resolution 3 channels:__ 3 times a 32 by 32 sample with the MFCC, the first derivative MFCC on time, and the Mel-spectrogram. Each sample has a size of 32 by 32 by 3.
+
+
+### 3.3 Classifier Architectures
+
+#### Fully connected, one layer
+
+This is the most simple architecture. All the input units are directly connected to the 10 output logits.
+
+#### 2D Convolution
+
+Similar to a picture classification task. The kernel will go over the defined rows in a predefined step size (stride):
+
+<img src="images/63by63_2d_convolution.png" width="700">
+
+
+#### 1D Convolution
+
+Similar to a time series classification task. The kernel will go once over the samples in a predefined step size (stride). The kernel height is similar to the one of the sample:
+
+<img src="images/63by63_1d_convolution.png" width="700">
+
+
+## 4. Jupyter Notebooks
+
+>[Model 1, high resolution b_63by63_model](b_63by63_model.ipynb)
+
+>[Model 2, low resolution c_32by32_model](c_32by32_model.ipynb)
+
+>[Model 3, low resolution-3 channels d_32by32by3_model](d_32by32by3_model.ipynb)
+
+
+## 5 Summary
+
+* 1D Convolutional Neural Networks give a quite good performance for the task.  They can give a minor improvement over the 2D CNN and the performance achieved with humans.
+
+* Reducing the size of the samples with lower resolution in time or frequency has not a big impact on the results. It would be interesting to extend this test on a within class (e.g. different birds) classification task. As the differences are smaller, the information given by the better resolution might help to differentiate all the classes.
+
+* Samples arranged as a 3 channel sample don't improve the results so much and are quite expensive in computing time.
+
+
+<img src="images/results.png" width="800">
 
 
 

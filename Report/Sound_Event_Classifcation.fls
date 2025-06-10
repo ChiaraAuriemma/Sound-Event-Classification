@@ -47,6 +47,17 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd

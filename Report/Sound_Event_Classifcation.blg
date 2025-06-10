@@ -8,49 +8,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: refs21.bib
+Warning--entry type for "pedalboard" isn't style-file defined
+--line 224 of file refs21.bib
 -- IEEEtran.bst version 1.10 (2002/09/27) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 20 entries,
+You've used 21 entries,
             3975 wiz_defined-function locations,
-            919 strings with 11384 characters,
-and the built_in function-call counts, 13853 in all, are:
-= -- 1107
-> -- 325
+            924 strings with 11516 characters,
+and the built_in function-call counts, 14263 in all, are:
+= -- 1138
+> -- 334
 < -- 94
-+ -- 176
-- -- 59
-* -- 661
-:= -- 2166
-add.period$ -- 42
-call.type$ -- 20
-change.case$ -- 23
++ -- 180
+- -- 61
+* -- 679
+:= -- 2239
+add.period$ -- 44
+call.type$ -- 21
+change.case$ -- 24
 chr.to.int$ -- 222
-cite$ -- 20
-duplicate$ -- 1006
-empty$ -- 1147
-format.name$ -- 74
-if$ -- 3152
+cite$ -- 21
+duplicate$ -- 1040
+empty$ -- 1186
+format.name$ -- 77
+if$ -- 3239
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 189
-newline$ -- 102
-num.names$ -- 20
-pop$ -- 477
+int.to.str$ -- 21
+missing$ -- 197
+newline$ -- 107
+num.names$ -- 21
+pop$ -- 502
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1085
+skip$ -- 1115
 stack$ -- 0
-substring$ -- 556
-swap$ -- 777
+substring$ -- 557
+swap$ -- 799
 text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 0
 warning$ -- 0
-while$ -- 53
-width$ -- 22
-write$ -- 230
+while$ -- 54
+width$ -- 23
+write$ -- 240
+(There was 1 warning)
