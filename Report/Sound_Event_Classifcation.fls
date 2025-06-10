@@ -212,6 +212,16 @@ INPUT ./Confusion_matrix_test.png
 INPUT ./Confusion_matrix_test.png
 INPUT ./Confusion_matrix_test.png
 INPUT ./Confusion_matrix_test.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_val.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_val.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_val.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_val.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_val.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_test.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_test.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_test.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_test.png
+INPUT ./6_2D_CNN_layer_model_confusion_matrix_test.png
 INPUT ./Sound_Event_Classifcation.bbl
 INPUT ./Sound_Event_Classifcation.bbl
 INPUT Sound_Event_Classifcation.bbl

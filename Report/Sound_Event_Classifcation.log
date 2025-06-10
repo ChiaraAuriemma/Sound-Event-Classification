@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.30)  10 JUN 2025 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.30)  10 JUN 2025 12:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -209,11 +209,11 @@ File: simple_cell.png Graphic file (type png)
 <use simple_cell.png>
 Package pdftex.def Info: simple_cell.png  used on input line 117.
 (pdftex.def)             Requested size: 241.84842pt x 154.18665pt.
-<Entire_architecture.png, id=3, 975.645pt x 846.16125pt>
+<Entire_architecture.png, id=3, 971.63pt x 832.10875pt>
 File: Entire_architecture.png Graphic file (type png)
 <use Entire_architecture.png>
 Package pdftex.def Info: Entire_architecture.png  used on input line 129.
-(pdftex.def)             Requested size: 241.84842pt x 209.74512pt.
+(pdftex.def)             Requested size: 241.84842pt x 207.11249pt.
 
 Underfull \hbox (badness 1546) in paragraph at lines 122--133
 []\OT1/ptm/m/n/9 After pro-cess-ing through these branches, the out-puts are
@@ -302,18 +302,27 @@ File: Confusion_matrix_test.png Graphic file (type png)
 Package pdftex.def Info: Confusion_matrix_test.png  used on input line 331.
 (pdftex.def)             Requested size: 241.84842pt x 261.32346pt.
 
-Underfull \vbox (badness 1102) has occurred while \output is active []
 
+[4 <./fold0.png> <./fold1.png> <./fold2.png> <./fold3.png> <./fold4.png>]
 
-
-[4 <./fold0.png> <./fold1.png> <./fold2.png> <./fold3.png> <./fold4.png>] (./Sound_Event_Classifcation.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+<6_2D_CNN_layer_model_confusion_matrix_val.png, id=48, 987.2082pt x 1076.1003pt>
+File: 6_2D_CNN_layer_model_confusion_matrix_val.png Graphic file (type png)
+<use 6_2D_CNN_layer_model_confusion_matrix_val.png>
+Package pdftex.def Info: 6_2D_CNN_layer_model_confusion_matrix_val.png  used on input line 510.
+(pdftex.def)             Requested size: 241.84842pt x 263.62225pt.
+<6_2D_CNN_layer_model_confusion_matrix_test.png, id=49, 995.8806pt x 1076.1003pt>
+File: 6_2D_CNN_layer_model_confusion_matrix_test.png Graphic file (type png)
+<use 6_2D_CNN_layer_model_confusion_matrix_test.png>
+Package pdftex.def Info: 6_2D_CNN_layer_model_confusion_matrix_test.png  used on input line 517.
+(pdftex.def)             Requested size: 241.84842pt x 261.32346pt.
+(./Sound_Event_Classifcation.bbl
+Underfull \vbox (badness 1371) has occurred while \output is active []
 
 
 
 [5 <./Confusion_matrix_val.png> <./Confusion_matrix_test.png>]
+
+
 Underfull \hbox (badness 1430) in paragraph at lines 45--46
 []\OT1/ptm/m/n/9 E. F. []Ornek, ``Au-dio clas-si-fi-ca-tion us-ing cnn on esc-50
  []
@@ -328,11 +337,9 @@ Underfull \hbox (badness 1237) in paragraph at lines 67--69
 \OT1/ptm/m/n/9 able: $https : / / scikit-[]learn . org / stable / modules / generated /
  []
 
-)
 
 
-
-[6]
+[6 <./6_2D_CNN_layer_model_confusion_matrix_val.png> <./6_2D_CNN_layer_model_confusion_matrix_test.png>])
 
 
 
@@ -340,7 +347,11 @@ Underfull \hbox (badness 1237) in paragraph at lines 67--69
 
 
 
-[8
+[8]
+
+
+
+[9
 
 ] (./Sound_Event_Classifcation.aux)
  ***********
@@ -349,18 +360,18 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3206 strings out of 473190
- 52889 string characters out of 5715800
- 517380 words of memory out of 5000000
- 26395 multiletter control sequences out of 15000+600000
+ 3222 strings out of 473190
+ 53717 string characters out of 5715800
+ 517493 words of memory out of 5000000
+ 26411 multiletter control sequences out of 15000+600000
  579480 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,67p,552b,478s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 59i,12n,67p,552b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Sound_Event_Classifcation.pdf (8 pages, 2475299 bytes).
+Output written on Sound_Event_Classifcation.pdf (9 pages, 2665882 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

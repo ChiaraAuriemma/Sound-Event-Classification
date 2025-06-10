@@ -322,19 +322,19 @@ labeling of the classes is reported in the appendix.
 \begin{figure}[ht]
   \centering
   \centerline{\includegraphics[width=\columnwidth]{Confusion_matrix_val.png}}
-  \caption{Confusion Matrix of the validation set.}
+  \caption{Confusion Matrix of the validation set for our final model.}
   \label{fig:confusion_matrix_val}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
   \centerline{\includegraphics[width=\columnwidth]{Confusion_matrix_test.png}}
-  \caption{Confusion Matrix of the test set.}
+  \caption{Confusion Matrix of the test set for our final model.}
   \label{fig:confusion_matrix_test}
 \end{figure}
 
 
-The reoprts are reported in Table~\ref{tab:validation_report}
+The classification reoprts are reported in Table~\ref{tab:validation_report}
 for the validation and in Table~\ref{tab:test_report} for the test.
 \begin{table}[ht]
   \centering
@@ -488,7 +488,37 @@ For what it concerns false positive, these are the errors made by the model: the
 and for two times the \textit{glass breaking} sound has been misclassified as \textit{can opening}. We can justify
 these results by claiming the same motivation we exposed before: similar spectrograms lead to misclassification.
 
-[Commento: manca il confronto con la baseline]
+By looking at the classification report of the baseline model (the 3 2D-CNN-layer model of lab 4 trained on a non augmented dataset),
+we notice that these same classes have been misclassified. However,
+we cannot directly infer that there are some biases toward them, since the test accuracy of the baseline model is pretty low (53\%),
+leading us to think that the model is not strong enough even to perform a proper misclassification: it is always not so able to
+unserstand which sounds are similar.
+
+With a slightly stronger version of the baseline (a 6 2D-CNN-layer model trained on a augmented dataset), the accuracy
+reaches 72\% (with still a high loss) returning a more reliable for comparison classification. On the classification report,
+we can see that, this time again, classes with noisy and similar spectrograms have been misclassified. For instance, in validation as shown inin Fig.~\ref{fig:6_2D_CNN_layer_model_confusion_matrix_val},
+the \textit{wind} sound has classified 2 times out of 8 as an \textit{airplane} sound, result that we got for our final model too.
+For the test, as reported in Fig.~\ref{fig:6_2D_CNN_layer_model_confusion_matrix_test}, we got a miscalssification of the same \textit{wind} sound, that have been classified 1 time out of 8 as a \textit{vacuum cleaner} sound.
+It is also interesting to analyze the behavior of the model with the ghost classes: this time again, we are dealing with classes
+with noisy spectrograms as the one cited in Fig.~\ref{fig:Ambiguous_sounds}. In fact, we see that the sounds belonging to the ghost class \textit{engine} have been classified as
+sounds belonging to the \textit{train} sound class, the \textit{helicopter} sound class, the \textit{coughing} sound class and the \textit{washing machine} sound class.
+The same we can notice for the sound belongin to the ghost class \textit{washing machine} that have been classified as
+sounds belognin to the \textit{thunderstorm} sound class, the \textit{train} sound class, the \textit{clock alarm} sound class and the \textit{engine} sound class.
+
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{6_2D_CNN_layer_model_confusion_matrix_val.png}}
+  \caption{Confusion Matrix of the validation set for the 6 2D-CNN-layer model.}
+  \label{fig:6_2D_CNN_layer_model_confusion_matrix_val}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{6_2D_CNN_layer_model_confusion_matrix_test.png}}
+  \caption{Confusion Matrix of the test set for the 6 2D-CNN-layer model.}
+  \label{fig:6_2D_CNN_layer_model_confusion_matrix_test}
+\end{figure}
+
 
 \subsection{Comparison: main model with different inputs}
 \label{sec:comparison_1}
@@ -516,9 +546,9 @@ However, with the improvements made by neural networks, is no longer necessary p
 are able to extract better features by themselves. For what we just said, we can undesrtand why even the simple
 STFT works better than MFCCs.
 
-\subsection{Comparison: main model with }
+\subsection{Comparison: main model with the baseline}
 \label{sec:comparison_2}
-
+The baseline model is a simple 2D Convolutional Neural Network (CNN) with three convolutional layers, one max pooling layer and one dense layer.
 \section{Acknowledgments}
 \label{sec:ack}
 
