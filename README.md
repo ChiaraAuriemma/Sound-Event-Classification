@@ -1,4 +1,5 @@
 # Sound Event Classification
+Sound Event Classification (SEC) has become an important task in the field of audio processing, with applications ranging from environmental monitoring to human-computer interaction. Aim of this project is to develop a sound event classification system based on a Convolutional Neural Network (CNN) architecture training it on the ESC-50 dataset. The model proposed is a multi-branch convolutional neural network (MBCNN) architecture that processes the log mel-spectrogram of the audio signal. It achieves an average test accuracy of 86%.
 
 ## Group:
 
@@ -10,109 +11,51 @@
 
 - ####  Filippo Marri &nbsp;([@filippomarri](https://github.com/filippomarri))<br> 10110508 &nbsp;&nbsp; filippo.marri@mail.polimi.it
 
+
 ## 1. Problem Definition
 
 This repository contains a Jupyter Notebook developed for an university project on sound event classification.
 Aim of the project is the one to develop, train and analyse a model able to classify sound events given as input.
 
-  Therefore, we will select a data set that provides labels based on the sound source like a subset of the [ESC50](https://github.com/karoldvl/ESC-50#esc-50-dataset-for-environmental-sound-classification).  We select the following sounds from 2 main soundscapes with 5 well defined sound sources for each:
-
-*  natural soundscapes:  rain, sea waves, wind, crickets, birds,
-*  urban soundscapes: car horn, train, siren, engine, church bells.
-
-From the reference material, the human accuracy on the selected classes is about 75.3%.
+The training, validation and test set are partitions of the  [ESC50](https://github.com/karoldvl/ESC-50#esc-50-dataset-for-environmental-sound-classification) dataset.
 
 ### Jupyter environment
+Python 3.9.9 has been used to run notebook.
+Tensorflow 2.16.2 is used for the machine learning part. Additionally, following libraries were also installed for some specific audio-processing tasks:
 
-Tensorflow 1.8.0 is used for the machine learning part.  Additionally, following libraries were also installed for some specific audio-processing tasks:
-
-* [librosa 0.6.1](https://librosa.github.io/librosa/)
-* [PySoundFile 0.9.0](http://pysoundfile.readthedocs.io/en/0.9.0/)
-
-
-## 2 Audio data selection, segmentation, and augmentationn
-
-[link](a_audio_data_preprocessing.ipynb)
-
-Some useful information are already provided by the data set, i.e. each file is in mono format, has a duration of 5s, sampling rate of 44,100Hz, and in a 16 bit format.  This part generates 400 audio samples, 40 per class.  To increase the sample size and to improve the training process, [Piczak (2015)](http://karol.piczak.com/papers/Piczak2015-ESC-ConvNet.pdf) recommends some manipulation on the raw audio data as a pre-processing step.  We will adjust his recommendations:
-
-* cut the files in short sequences, here we will make 1s duration for each file with 50% overlap,
-* down-sample the files to 32,000Hz.  It is quite important to increase the default down-sampling value from 22,050Hz because some sounds, like crickets and birds, have characteristically high-frequency traits above 10kHz.  With this adjustment, the highest coded frequency matches the human hearing limit of 16 kHz,
-* remove the files without any signal or with too low variations,
-* for each odd sub-sample number, add random noise to create data augmentation ([Salamon & Bello, 2016](https://arxiv.org/abs/1608.04363)).
-
-A single original file will therefore generate 9 new audio files for the learning tasks as shown in the figure below:
-
-<img src="images/data_preparation.png" width="500">
-
-[](https://github.com/LesimpleC/Sound-Event-Classification-with-Data-Augmentation-and-CNN/issues/1#issue-789173922) 
-
-From the 400 selected original files, we should get 3,600 new files. After the segmentation and selection , we get a new audio database of 3,552 items in `test_audio` and `train_audio` directory, i.e. 48 sub-samples are considered as empty (non informative) and removed.
+* Librosa 0.10.2.post1
+* Scikit-learn 1.6.1
+* Audiomentations 0.41.0
+* Pedalboard 0.9.17
 
 
-## 3 Features extraction
+## 2. Audio data selection and augmentationn
 
-The raw wave file is a temporal variation of the amplitude. However, we hear also the pitch, the harmonic contempt (frequency) and their variations. The representation of a sound in three dimensions (time, frequency, amplitude) can be treated like an image. Each pixel is defined by the time frame and frequency bin and the intensity of the pixel is defined by the power computed in each defined surface.  The power spectrogram is the first transformation from time to time/frequency domain.  The Mel-frequency cepstral coefficients are successfully used in classification and the idea is to come closer to the human perception characteristics. 
+Some useful information are already provided by the dataset, i.e. each file is in mono format, has a duration of 5s, sampling rate of 44,100Hz, and in a 16 bit format. The dataset contains 2000 audio samples, 40 per each of the 50 classes.  To increase the performance of the model, a data augmentation has been performed with this functions:
 
+-	Add different background noises with different SNRs
+-	Pitch shifting
+-	Time stretching
+-	Dynamic range compression
+-	Convolution with impulse responses
 
-### 3.1 Mel-Frequency Cepstral Coefficients
-
-A psycho-acoustical model, the Mel-Frequency Cepstral Coefficients (MFCC), gives an alternative to reduce the amount of information that a full spectrogram would produce and better follow human perception characteristics. [Wikipedia](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum): _"the mel-frequency cepstrum (MFC) is a representation of the short-term power spectrum of a sound, based on a linear cosine transform of a log power spectrum on a nonlinear mel scale of frequency."_
-
-
-### 3.2 MFCC parameters
-
-We can try classification with different MFCCs dimensions.  We can then evaluate the influence of time/frequency resolution on the accuracy of the classifier.  Note that the findings only apply to the current problem.  Intra-class variation, e.g. different birds or different cars, might need more information with a better time or frequency resolution.
-
-We can try a different models:
-
-* __Model 1 high resolution:__ with a hop length of 512 samples. This gives 63 frames in a 1s sample. To keep a square like picture we will need therefore 63 coefficients from the MFC transformation. Each sample has a size of 63 by 63.
-
-* __Model 2 low resolution:__ with a hop length of 1024 samples. This gives 32 frames in a 1s sample. To keep a square like picture we will need therefore 32 coefficients from the MFC transformation. Each sample has a size of 32 by 32.
-
-* __Model 3 low resolution 3 channels:__ 3 times a 32 by 32 sample with the MFCC, the first derivative MFCC on time, and the Mel-spectrogram. Each sample has a size of 32 by 32 by 3.
+A single original file will therefore generate 5 new audio files for the training set that are added to the class of the original audio.
 
 
-### 3.3 Classifier Architectures
-
-#### Fully connected, one layer
-
-This is the most simple architecture. All the input units are directly connected to the 10 output logits.
-
-#### 2D Convolution
-
-Similar to a picture classification task. The kernel will go over the defined rows in a predefined step size (stride):
-
-<img src="images/63by63_2d_convolution.png" width="700">
+## 3. Features extraction
+The log Mel-spectrogram is successfully used in classification. This is the feature we favor for our discussion.
 
 
-#### 1D Convolution
-
-Similar to a time series classification task. The kernel will go once over the samples in a predefined step size (stride). The kernel height is similar to the one of the sample:
-
-<img src="images/63by63_1d_convolution.png" width="700">
-
-
-## 4. Jupyter Notebooks
-
->[Model 1, high resolution b_63by63_model](b_63by63_model.ipynb)
-
->[Model 2, low resolution c_32by32_model](c_32by32_model.ipynb)
-
->[Model 3, low resolution-3 channels d_32by32by3_model](d_32by32by3_model.ipynb)
+## 4. Classifier Architecture
+The model proposed is a multi-branch convolutional
+neural network (MBCNN) architecture that processes the
+log mel-spectrogram of the audio signal whose structure is reported below.
+<img src="Report/Compact_version.png" width="700">
 
 
-## 5 Summary
+## 5. Jupyter Notebook
 
-* 1D Convolutional Neural Networks give a quite good performance for the task.  They can give a minor improvement over the 2D CNN and the performance achieved with humans.
+>[MBCNN](MBCNN.ipynb)
 
-* Reducing the size of the samples with lower resolution in time or frequency has not a big impact on the results. It would be interesting to extend this test on a within class (e.g. different birds) classification task. As the differences are smaller, the information given by the better resolution might help to differentiate all the classes.
-
-* Samples arranged as a 3 channel sample don't improve the results so much and are quite expensive in computing time.
-
-
-<img src="images/results.png" width="800">
-
-
-
-
+## 6. Summary
+The model achieves an average test accuracy of 86%.
