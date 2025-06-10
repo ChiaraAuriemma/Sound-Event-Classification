@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Sound_Event_Classifcation"] 1749541073.5535 "Sound_Event_Classifcation.aux" "Sound_Event_Classifcation.bbl" "Sound_Event_Classifcation" 1749541096.0152 0
+["bibtex Sound_Event_Classifcation"] 1749545311.90125 "Sound_Event_Classifcation.aux" "Sound_Event_Classifcation.bbl" "Sound_Event_Classifcation" 1749545662.07746 0
   "./IEEEtran.bst" 1611999598 56730 967ffc1c31f2d8f0374b4bda826db6ab ""
   "./refs21.bib" 1749477765.26732 8290 6b88d8a2a3c358ec6f43273e1c7213d2 ""
-  "Sound_Event_Classifcation.aux" 1749541095.79911 7161 4bcb106743a7b63de1d4da8e7334a6de "pdflatex"
+  "Sound_Event_Classifcation.aux" 1749545661.84422 7342 f65355e9194d88fd0ce66e0631c45d21 "pdflatex"
   (generated)
   "Sound_Event_Classifcation.bbl"
   "Sound_Event_Classifcation.blg"
   (rewritten before read)
-["pdflatex"] 1749541093.63333 "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" "Sound_Event_Classifcation.pdf" "Sound_Event_Classifcation" 1749541096.01535 0
-  "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" 1749541093.45137 26986 fd3126b24782e2a1fb104bffbe4a6b55 ""
+["pdflatex"] 1749545659.54451 "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" "Sound_Event_Classifcation.pdf" "Sound_Event_Classifcation" 1749545662.07763 0
+  "/Users/filippo/Library/CloudStorage/OneDrive-PolitecnicodiMilano/Corsi/Selected Topics in Music and Acoustic Engineering/Git/Sound-Event-Classification/Report/Sound_Event_Classifcation.tex" 1749545659.29793 27248 820e9d8371528e9cec9104983ec65de6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -93,16 +93,17 @@
   "Entire_architecture.png" 1749501313.23154 894802 378f3ef8f81ee16a0dd93641ec8af226 ""
   "Harmonic_Percussive_Wind.png" 1749506422.08886 403553 b2da8f3495b8131009859a837889a437 ""
   "MAECapstoneCourse.sty" 1748610054.47346 15246 5f2bb3e6c9a18e4f9da75e02e84e76e7 ""
-  "Sound_Event_Classifcation.aux" 1749541095.79911 7161 4bcb106743a7b63de1d4da8e7334a6de "pdflatex"
-  "Sound_Event_Classifcation.bbl" 1749541073.65303 4588 a721779e54ba27e0b6b746632e80c6f8 "bibtex Sound_Event_Classifcation"
-  "Sound_Event_Classifcation.tex" 1749541093.45137 26986 fd3126b24782e2a1fb104bffbe4a6b55 ""
+  "Sound_Event_Classifcation.aux" 1749545661.84422 7342 f65355e9194d88fd0ce66e0631c45d21 "pdflatex"
+  "Sound_Event_Classifcation.bbl" 1749545311.99998 4588 a721779e54ba27e0b6b746632e80c6f8 "bibtex Sound_Event_Classifcation"
+  "Sound_Event_Classifcation.tex" 1749545659.29793 27248 820e9d8371528e9cec9104983ec65de6 ""
   "Three_types_of_sound.png" 1749506371.67397 540661 c07217c8c133be108d4eadc4dba034ee ""
+  "balanced_dataset.png" 1749543534.50176 75826 0577e9ca1b540b070cd84b334a13904e ""
   "dog_barking.png" 1749506396.01286 494523 6ef9a6fd37954ef9700b761150e08cdd ""
-  "fold0.png" 1749332986.58776 75931 30530e835ed7497cd263c8bbdd0d236d ""
-  "fold1.png" 1749333008.50358 76530 d28b4c22bcdd19931a0c83a9c2b23371 ""
-  "fold2.png" 1749333013.75262 76794 aa61e7d56ffcdafa9bda0ed68f554907 ""
-  "fold3.png" 1749333017.87577 74426 bae6207504f6773d0bc05e0aea9ea80c ""
-  "fold4.png" 1749333021.09586 69101 4467db7063e9b8b9a206d26e4d1872da ""
+  "fold0.png" 1749544719.55681 73758 7f846b893d61cf8f3c43e4cb02e1ccf2 ""
+  "fold1.png" 1749544726.31315 73645 af10f2303934dd95bd29f19976b10407 ""
+  "fold2.png" 1749544738.72544 73687 2cc0b95115f2dbcde622a95e67aa6482 ""
+  "fold3.png" 1749544745.89488 71787 42cbe89ee535e9c18d0bf68c0787a734 ""
+  "fold4.png" 1749544752.85317 68301 b29027cb4ded51a4e0ae089d9de2e5a5 ""
   "simple_cell.png" 1749503046.13846 234265 393008308e6756192f2fe82dc1f958e0 ""
   "url.sty" 1611999598 21932 e3a9cf32ee9b853b42be14c2f25b873c ""
   (generated)

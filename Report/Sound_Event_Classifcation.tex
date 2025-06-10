@@ -91,6 +91,11 @@ The output is a 2D array of shape (128, 1723) representing how energy in differe
 
 \subsection{Model description}
 \label{sec:model_description}
+The model code can be found at the following link:
+
+\url{https://github.com/ChiaraAuriemma/Sound-Event-Classification}.
+
+
 Our implementation utilizes a bi-dimensional Convolutional Neural Network (CNN)
 with four parallel branches, each extracting different levels of information from the
 input data using specifically calibrated kernel sizes. 
@@ -99,7 +104,7 @@ imposed equal to 1. With this method, each branch alternates between horizontal 
 enabling efficient extraction of localized patterns across both time and frequency domains.
 The net is built following a cellular approach. Each cell is composed by a Conv2D layer followed by batch normalization and
 ReLU activationin in order to ensure training stability and non-linearity as its shown in figure~\ref{fig:simple_cell}.
-[After each Conv2D layer, we apply batch normalization and ReLU activationin order to ensure training stability and non-linearity.]
+[Commento: after each Conv2D layer, we apply batch normalization and ReLU activationin order to ensure training stability and non-linearity.]
 \begin{figure}[ht]
   \centering
   \centerline{\includegraphics[width=\columnwidth]{simple_cell.png}}
@@ -138,12 +143,19 @@ feature representation.
 \label{sec:format}
 
 The dataset used for this project is the well-known ESC-50 dataset \cite{piczak2015dataset}, which contains
-2000 labeled isolated eviromental sound events from 50 different classes [pensiamoci], with each class containing 40 samples.
+2000 labeled isolated eviromental sound events from 50 different classes, with each class containing 40 samples.
 Each sound of the dataset is a mono recording available in WAV format (Ogg Vorbis
 compress at 192 kbit/s) with a sample rate of 44.1 kHz and a bit depth of 16 bits.
 Clips in this dataset have been manually extracted from public field recordings gathered
 by the Freesound project \cite{fonseca2020fsd50k}. The resulting dataset is available under a Creative Com-
 mons non-commercial license through the Harvard Dataverse project \cite{piczak2015dataset}.
+
+\begin{figure}[ht]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{balanced_dataset.png}}
+  \caption{Graphical demontration of the balance of the dataset used.}
+  \label{fig:balanced_dataset}
+\end{figure}
 
 According to the analysis that will be done on the results inspired by \textit{Attention based Convolutional Recurrent Neural Network for Environmental Sound Classification} \cite{zhang2019attentionbasedconvolutionalrecurrent}, the type of soound events in the dataset can be divided into three main categories:
 \begin{itemize}
@@ -203,15 +215,13 @@ A part of the dataset, 200 elements (10\% of the total), has been separated for 
 Drawing inspiration by the Salamon and Bello paper \cite{salamon2017deep}, five different techniques have been implemented to process the training set:
 \begin{itemize}
     \item \textbf{Time Stretching (TS)}: the audio signal is stretched or compressed in time by a random factor within a specified range. A last boolean parameter crop the processed audio to the original length, so that the model can be trained on the same length of the original audio.
-    \item \textbf{Pitch Shifting (PS)}: the audio signal is shifted in pitch by a random factor within a specified range. [togliere activation probability]
+    \item \textbf{Pitch Shifting (PS)}: the audio signal is shifted in pitch by a random factor within a specified range.
     \item \textbf{Background Noise (BN)}: a Gaussian noise is added to the audio signal with a specified SNR range.
-    \item \textbf{Dynamic Range Compression (DRC)}: the dynamic range of the audio signal is compressed from a certain threshold with a specified ratio, attack time, and release time. [Aggiungere che è fatto con la funzione di spotify]
+    \item \textbf{Dynamic Range Compression (DRC)}: the dynamic range of the audio signal is compressed from a certain threshold with a specified ratio, attack time, and release time. [Commento: aggiungere che è fatto con la funzione di spotify]
     \item \textbf{Convolution with Impulse Responses (CIR)}: the audio signal is convolved with the \textit{MIT Acoustical Reverberation Scene Statistics Survey} dataset of impulse response \cite{traer2016statistics} to simulate different acoustic environments.
 \end{itemize}
 
-[Ce le mettiamo le immagini?]
-
-For all the results presented in this paper, the training dataset has been preprocessed using the following parameters: [Toglere elenco e mettere i valori in tabella o scriverli direttamente] 
+For all the results presented in this paper, the training dataset has been preprocessed using the following parameters:
 \begin{itemize}
     \item TS: factor between 0.8 and 1.25
     \item PS: factor between -5 and 5 semitones
@@ -231,47 +241,46 @@ Furthermore, we ensured that there is no data leakage between training and valid
 training set after the splitting.
 
 The training of the models have been performed on the A100 GPU by Google Colab.
-\newpage
 
 
 
 \section{Results}
 \label{sec:results}
-\subsection{Main model results [abbiamo mai citato altri modelli?]}
+\subsection{Main model results}
 \label{sec:main_model_results}
 The results of the training of the model for each fold are reported in Figures~\ref{fig:fold0}, \ref{fig:fold1}, \ref{fig:fold2}, \ref{fig:fold3} and \ref{fig:fold4}.
 \begin{figure}[ht]
   \centering
   \centerline{\includegraphics[width=\columnwidth]{fold0.png}}
-  \caption{Result of the training for the first fold.}
+  \caption{Result of the training for the zero fold.}
   \label{fig:fold0}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
   \centerline{\includegraphics[width=\columnwidth]{fold1.png}}
-  \caption{Result of the training for the second fold.}
+  \caption{Result of the training for the first fold.}
   \label{fig:fold1}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
   \centerline{\includegraphics[width=\columnwidth]{fold2.png}}
-  \caption{Result of the training for the third fold.}
+  \caption{Result of the training for the second fold.}
   \label{fig:fold2}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
   \centerline{\includegraphics[width=\columnwidth]{fold3.png}}
-  \caption{Result of the training for the fourth fold.}
+  \caption{Result of the training for the third fold.}
   \label{fig:fold3}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
   \centerline{\includegraphics[width=\columnwidth]{fold4.png}}
-  \caption{Result of the training for the fifth fold.}
+  \caption{Result of the training for the fourth fold.}
   \label{fig:fold4}
 \end{figure}
 
@@ -286,13 +295,15 @@ The performnce for each fold is reported in Table~\ref{tab:folds_results}.
     \hline
     Fold & Test Accuracy & Test Loss \\
     \hline
-    1 & 0.85 & 0.65 \\
-    2 & 0.87 & 0.60 \\
-    3 & 0.88 & 0.58 \\
-    4 & 0.86 & 0.62 \\
-    5 & 0.85 & 0.64 \\
+    0 & 0.85 & 0.65 \\
+    1 & 0.87 & 0.60 \\
+    2 & 0.88 & 0.58 \\
+    3 & 0.86 & 0.62 \\
+    4 & 0.85 & 0.64 \\
     \hline
     Average & 0.86 & 0.63 \\
+    \hline
+    Standard Deviation & 0.024 &  \\
     \hline
   \end{tabular}
 \end{table}
@@ -470,6 +481,7 @@ For what it concerns false positive, these are the errors made by the model: the
 and for two times the \textit{glass breaking} sound has been misclassified as \textit{can opening}. We can justify
 these results by claiming the same motivation we exposed before: similar spectrograms lead to misclassification.
 
+[Commento: manca il confronto con la baseline]
 
 \subsection{Comparison: main model with different inputs}
 \label{sec:comparison_1}
