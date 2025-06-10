@@ -457,7 +457,9 @@ One of them is the \textit{wind} class that is misclassified 3 times out of 4: o
 \textit{train}, one as \textit{airplane} and as \textit{sea waves}. As we can notice, all the three sounds
 are continuous and noisy sounds, so it is not surprising that the model has some difficulties in classifying them.
 This match with what we assumed by looking at Fig.~\ref{fig:Ambiguous_sounds}: sounds with similar spectrograms are
-more difficult to classify. [Articolo ESC che dimostra come anche gli uomini le sabgliano].
+more difficult to classify. It is interesting to notice that the recall of these three classes is not high even in the 
+results of the experiment conducted by Piczak \cite{piczak2015dataset} in which a group oh humnas listened to the sounds and classified them.
+This leads us to think that since the model is inspired by the human auditory system, it is not surprising that it has the same difficulties in classifying the sounds. 
 
 Another class that is misclassified is the \textit{coughing} class, which is confused with the 
 \textit{sneezing} and \textit{water drops} class. We underline how all these sounds are intermittent sounds
